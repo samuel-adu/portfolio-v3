@@ -1,0 +1,9 @@
+footer {
+  padding-block: var(--spacing-s);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

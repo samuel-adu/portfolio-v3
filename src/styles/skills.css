@@ -1,0 +1,31 @@
+.skills-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-s);
+}
+
+.skills-list-item {
+  text-align: center;
+}
+
+.skill-name {
+  font-size: var(--text-large);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.skill-level {
+  font-size: var(--text-thin);
+  margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .skills-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .skills-list-item {
+    text-align: left;
+  }
+}

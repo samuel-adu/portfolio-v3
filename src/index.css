@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --heading-1: 2.5rem;
+  --heading-2: 2.25rem;
+  --heading-3: 2rem;
+  --heading-4: 1.5rem;
+  --heading-5: 1.25rem;
+  --heading-6: 1.125rem;
+  --text-large: 1.5rem;
+  --text-medium: 1.25rem;
+  --text-regular: 1rem;
+  --text-small: 0.875rem;
+  --text-thin: 0.75rem;
+
+  --clr-neutral-50: #eceff1;
+  --clr-neutral-100: #cfd8dc;
+  --clr-neutral-200: #b0bec5;
+  --clr-neutral-300: #90a4ae;
+  --clr-neutral-400: #78909c;
+  --clr-neutral-500: #607d8b;
+  --clr-neutral-600: #546e7a;
+  --clr-neutral-700: #455a64;
+  --clr-neutral-800: #37474f;
+  --clr-neutral-900: #263238;
+
+  --clr-primary-50: #e0f2f1;
+  --clr-primary-100: #b2dfdb;
+  --clr-primary-200: #80cbc4;
+  --clr-primary-300: #4db6ac;
+  --clr-primary-400: #26a69a;
+  --clr-primary-500: #009688;
+  --clr-primary-600: #00897b;
+  --clr-primary-700: #00796b;
+  --clr-primary-800: #00695c;
+  --clr-primary-900: #004d40;
+  --clr-primary-A100: #a7ffeb;
+  --clr-primary-A200: #64ffda;
+  --clr-primary-A400: #1de9b6;
+  --clr-primary-A700: #00bfa5;
+
+  --text-light: rgba(255, 255, 255, 0.87);
+  --text-dark: #213547;
+
+  --bg-light: #ffffff;
+  --bg-dark: #242424;
+
+  --spacing-l: 9rem;
+  --spacing-m: 5rem;
+  --spacing-s: 2rem;
+  --spacing-base: 1rem;
+  --spacing-xs: 0.25rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: var(--heading-1);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-text {
+  margin-bottom: var(--spacing-base);
+}
+
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.125rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--clr-primary-A700);
+  color: var(--text-light);
+}
+
+.btn--secondary {
+  color: var(--clr-primary-500);
+  padding-inline: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --heading-1: 3rem;
+    --heading-2: 2.5rem;
+    --heading-3: 2.25rem;
+    --heading-4: 1.5rem;
+    --heading-5: 1.25rem;
+    --heading-6: 1.125rem;
+  }
+}
