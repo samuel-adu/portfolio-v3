@@ -8,22 +8,11 @@ function Hero() {
     <section className="">
       <div className="container">
         <div className="hero-section">
-          <div className="sm:order-1 hero-image">
-            <img
-              src={displayPhoto}
-              alt="me sitting at my desk"
-              className="hero-img"
-            />
-          </div>
-
           <div className="hero-main">
             <h1 className="hero-heading">
-              I'm Samuel Adu, a frontend developer.
-            </h1>
-            <p className="hero-callout-text">
               I build aesthetically pleasing and functionally robust
               user-centric applications
-            </p>
+            </h1>
 
             <div className="hero-cta">
               <Link to="#portfolio" className="btn btn--primary">
@@ -38,6 +27,12 @@ function Hero() {
               </Link>
             </div>
           </div>
+
+          <img
+            src={displayPhoto}
+            alt="me sitting at my desk"
+            className="hero-img sm:order-1 hero-image"
+          />
         </div>
       </div>
     </section>

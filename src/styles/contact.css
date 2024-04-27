@@ -1,8 +1,13 @@
 .contact-section {
   text-align: center;
   padding-block: var(--spacing-l);
+  background-color: var(--clr-neutral-50);
 }
 
 .contact-section-heading {
   margin-bottom: var(--spacing-s);
+}
+
+.contact-section .section-text {
+  font-size: var(--heading-3);
 }

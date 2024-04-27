@@ -1,23 +1,20 @@
 .hero-main {
-  padding-bottom: var(--spacing-l);
+  padding-block: var(--spacing-m);
+  text-align: center;
 }
 
 .hero-heading {
-  font-size: var(--text-regular);
-  font-weight: 400;
-  margin-block: var(--spacing-base);
-}
-
-.hero-callout-text {
   font-size: var(--heading-1);
-  line-height: 1.1;
   font-weight: 700;
+  line-height: 1.1;
   margin-bottom: var(--spacing-s);
 }
 
 .hero-cta {
   display: flex;
   gap: var(--spacing-s);
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 640px) {

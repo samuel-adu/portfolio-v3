@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-// import { FaGithub, FaUpRightFromSquare } from "react-icons/fa6";
 import { getImageUrl } from '../utils/getImageUrl';
 import '../styles/project.css';
 
@@ -15,35 +14,20 @@ export default function Project({ project }) {
         />
       </Link>
 
-      <h3 className="card-heading">
-        <Link to={project.liveUrl} target="_blank">
-          {project.title}
-        </Link>
-      </h3>
+      <Link to={project.liveUrl} target="_blank" className="card-heading">
+        {project.title}
+      </Link>
 
       <p className="card-text">{project.description}</p>
 
-      <div className="card-cta">
-        <Link
-          to={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card-btn btn btn--secondary"
-        >
-          view code
-          {/* <FaGithub className="fa-lg ml-1 inline" /> */}
-        </Link>
-
-        <Link
-          to={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card-btn btn btn--secondary"
-        >
-          view project
-          {/* <FaUpRightFromSquare className="fa-lg ml-1 inline" /> */}
-        </Link>
-      </div>
+      <Link
+        to={project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="card-btn card-cta btn btn--secondary"
+      >
+        view on github
+      </Link>
     </article>
   );
 }

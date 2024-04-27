@@ -10,24 +10,24 @@ function Navbar() {
       <div className="container">
         <div className="navbar">
           <Link to="/" className="">
-            <img src={logo} alt="" width={30} height={30} />
+            <img src={logo} alt="" width={35} height={35} />
           </Link>
-          <span className="mr-auto font-mono">thesamueladu</span>
+          <span className="mr-auto uppercase font-semibold">SamuelAdu</span>
 
           <nav className="nav">
-            <NavLink
-              to="https://github.com/samuel-adu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="text-2xl" />
-            </NavLink>
             <NavLink
               to="https://www.frontendmentor.io/profile/samuel-adu"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiFrontendmentor className="text-2xl" />
+            </NavLink>
+            <NavLink
+              to="https://github.com/samuel-adu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-2xl" />
             </NavLink>
             <NavLink
               to="https://www.linkedin.com/in/samuel-oa"

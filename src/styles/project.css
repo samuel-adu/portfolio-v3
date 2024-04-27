@@ -15,10 +15,10 @@
 }
 
 .project-card {
+  background-color: var(--clr-neutral-50);
   display: flex;
   flex-direction: column;
   padding: var(--spacing-base);
-  border: 1px solid var(--clr-neutral-100);
 }
 
 .card-img {
@@ -52,6 +52,7 @@
 .card-btn {
   margin-top: auto;
   margin-bottom: 0;
+  color: var(--clr-neutral-500);
 }
 
 @media (min-width: 640px) {

@@ -6,13 +6,12 @@ function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="section-heading contact-section-heading">contact</h2>
         <p className="section-text">
-          Feel free to leave me a message and I'll get back to you.
+          I'm open to new opportunities and I'd like to work with you.
         </p>
 
         <Link to="mailto:thesamueladu@gmail.com" className="btn btn--primary">
-          send message
+          contact me
         </Link>
       </div>
     </section>

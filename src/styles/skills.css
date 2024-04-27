@@ -1,3 +1,7 @@
+.skills-section {
+  padding-block: var(--spacing-m);
+}
+
 .skills-list {
   display: flex;
   align-items: center;
