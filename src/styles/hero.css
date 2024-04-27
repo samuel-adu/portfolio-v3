@@ -12,7 +12,7 @@
 
 .hero-cta {
   display: flex;
-  gap: var(--spacing-s);
+  gap: var(--spacing-xs);
   align-items: center;
   justify-content: center;
 }

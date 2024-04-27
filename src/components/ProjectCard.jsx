@@ -24,9 +24,9 @@ export default function Project({ project }) {
         to={project.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="card-btn card-cta btn btn--secondary"
+        className="card-btn"
       >
-        view on github
+        View on GitHub
       </Link>
     </article>
   );

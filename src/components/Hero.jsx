@@ -15,15 +15,11 @@ function Hero() {
             </h1>
 
             <div className="hero-cta">
-              <Link to="#portfolio" className="btn btn--primary">
+              <Link to="#projects" className="btn btn--primary">
                 go to projects
               </Link>
-              <Link
-                to="../resume.pdf"
-                target="_blank"
-                className="btn btn--secondary"
-              >
-                Download CV
+              <Link to="/resume" target="_blank" className="btn btn--secondary">
+                View my resume
               </Link>
             </div>
           </div>

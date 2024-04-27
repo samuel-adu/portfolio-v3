@@ -10,7 +10,7 @@ function Contact() {
           I'm open to new opportunities and I'd like to work with you.
         </p>
 
-        <Link to="mailto:thesamueladu@gmail.com" className="btn btn--primary">
+        <Link to="mailto:samueladu.dev@gmail.com" className="btn btn--primary">
           contact me
         </Link>
       </div>

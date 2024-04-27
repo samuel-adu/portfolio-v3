@@ -43,16 +43,18 @@
   margin-bottom: var(--spacing-base);
 }
 
-.card-cta {
-  display: flex;
-  gap: var(--spacing-s);
+.card-btn {
+  align-self: flex-start;
+  display: inline-block;
   margin-top: auto;
+  font-size: var(--text-regular);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-neutral-200);
 }
 
-.card-btn {
-  margin-top: auto;
-  margin-bottom: 0;
-  color: var(--clr-neutral-500);
+.card-btn:hover {
+  background-color: var(--clr-neutral-100);
 }
 
 @media (min-width: 640px) {
