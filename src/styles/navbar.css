@@ -6,6 +6,20 @@
 }
 
 .nav {
-  display: flex;
-  gap: var(--spacing-base);
+  display: none;
+  gap: var(--spacing-s);
+}
+
+/* .nav-link {
+  padding-inline: var(--spacing-s);
+} */
+
+/* .nav-link:hover {
+  background-color: var(--clr-neutral-100);
+} */
+
+@media (min-width: 640px) {
+  .nav {
+    display: flex;
+  }
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Projects() {
   return (
-    <main id="projects" className="project-section">
+    <div id="projects" className="project-section">
       <div className="container">
         <div className="section-banner">
           <h2 className="section-heading project-section-heading">Projects</h2>
@@ -22,7 +22,7 @@ function Projects() {
           })}
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 

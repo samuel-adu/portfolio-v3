@@ -1,7 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/icons/favicon-32x32.png';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiFrontendmentor } from 'react-icons/si';
 import '../styles/navbar.css';
 
 function Navbar() {
@@ -12,29 +10,31 @@ function Navbar() {
           <Link to="/" className="">
             <img src={logo} alt="" width={35} height={35} />
           </Link>
-          <span className="mr-auto uppercase font-semibold">SamuelAdu</span>
+          <span className="ml-1 mr-auto uppercase font-semibold">
+            SamuelAdu
+          </span>
 
           <nav className="nav">
             <NavLink
-              to="https://www.frontendmentor.io/profile/samuel-adu"
-              target="_blank"
+              to="#projects"
               rel="noopener noreferrer"
+              className="nav-link btn btn--secondary"
             >
-              <SiFrontendmentor className="text-2xl" />
+              Work
             </NavLink>
             <NavLink
-              to="https://github.com/samuel-adu"
-              target="_blank"
+              to="/resume"
               rel="noopener noreferrer"
+              className="nav-link btn btn--secondary"
             >
-              <FaGithub className="text-2xl" />
+              Resumé
             </NavLink>
             <NavLink
-              to="https://www.linkedin.com/in/samuel-oa"
-              target="_blank"
+              to="mailto:samueladu.dev@gmail.com"
               rel="noopener noreferrer"
+              className="nav-link btn btn--secondary"
             >
-              <FaLinkedin className="text-2xl" />
+              Contact
             </NavLink>
           </nav>
         </div>

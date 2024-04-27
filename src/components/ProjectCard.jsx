@@ -6,7 +6,7 @@ import '../styles/project.css';
 export default function Project({ project }) {
   return (
     <article className="project-card">
-      <Link href={project.liveUrl} target="_blank">
+      <Link to={project.liveUrl} target="_blank">
         <img
           src={getImageUrl(project.img)}
           alt="project preview"

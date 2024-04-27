@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import '../styles/App.css';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
@@ -7,7 +6,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Skills from '../components/Skills';
 
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -22,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

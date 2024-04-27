@@ -13,14 +13,26 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --text-light: rgba(255, 255, 255, 0.87);
+  --text-dark: #213547;
+
+  --bg-light: #ffffff;
+  --bg-dark: #242424;
+
   color-scheme: light dark;
-  color: var(--clr-neutral-50);
-  background-color: var(--clr-neutral-900);
+  color: var(--text-light);
+  background-color: var(--bg-dark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --spacing-l: 9rem;
+  --spacing-m: 5rem;
+  --spacing-s: 2rem;
+  --spacing-base: 1rem;
+  --spacing-xs: 0.25rem;
 
   --heading-1: 2.5rem;
   --heading-2: 2.25rem;
@@ -59,15 +71,6 @@
   --clr-primary-A200: #64ffda;
   --clr-primary-A400: #1de9b6;
   --clr-primary-A700: #00bfa5;
-
-  --clr-white: #ffffff;
-  --clr-black: #242424;
-
-  --spacing-l: 9rem;
-  --spacing-m: 5rem;
-  --spacing-s: 2rem;
-  --spacing-base: 1rem;
-  --spacing-xs: 0.25rem;
 }
 
 body {
@@ -120,27 +123,22 @@ p {
 
 .btn--primary {
   background-color: var(--clr-primary-A700);
-  color: var(--clr-neutral-50);
+  color: var(--text-dark);
 }
 
 .btn--primary:hover {
-  color: var(--clr-neutral-50);
   background-color: var(--clr-primary-200);
-}
-
-.btn--secondary {
-  color: var(--clr-primary-500);
 }
 
 .btn--secondary:hover {
-  background-color: var(--clr-primary-200);
-  color: var(--clr-neutral-50);
+  background-color: var(--clr-neutral-100);
+  color: var(--text-dark);
   padding: 0.5rem 1rem;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--clr-neutral-900);
+    color: var(--text-dark);
     background-color: var(--bg-light);
   }
 }

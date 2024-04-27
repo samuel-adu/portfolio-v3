@@ -4,10 +4,14 @@
   background-color: var(--clr-neutral-50);
 }
 
-.contact-section-heading {
+.contact-section .section-text {
+  font-size: var(--heading-1);
   margin-bottom: var(--spacing-s);
 }
 
-.contact-section .section-text {
-  font-size: var(--heading-3);
+@media (min-width: 640px) {
+  .contact-section .section-text {
+    width: 60%;
+    margin-inline: auto;
+  }
 }
