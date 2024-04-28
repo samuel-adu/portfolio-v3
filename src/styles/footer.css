@@ -1,6 +1,8 @@
 footer {
   padding-block: var(--spacing-s);
-  background-color: var(--clr-neutral-100);
+  background-color: var(--bg-dark);
+  color: var(--clr-neutral-50);
+  margin-top: auto;
 }
 
 .footer-nav {

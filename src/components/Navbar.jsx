@@ -10,7 +10,7 @@ function Navbar() {
           <Link to="/" className="">
             <img src={logo} alt="" width={35} height={35} />
           </Link>
-          <span className="ml-1 mr-auto uppercase font-semibold">
+          <span className="ml-1 mr-auto lowercase font-semibold">
             SamuelAdu
           </span>
 
