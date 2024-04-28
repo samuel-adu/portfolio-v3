@@ -12,7 +12,6 @@ function Home() {
       <hr />
       <Projects />
       <Contact />
-      <hr />
     </main>
   );
 }

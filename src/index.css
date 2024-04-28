@@ -54,7 +54,7 @@
   --clr-primary-A700: #00bfa5;
 
   --bg-primary: #242424;
-  --bg-secondary: #263238;
+  --bg-secondary: hsl(235, 21%, 11%);
 
   --text-light: rgba(255, 255, 255, 0.87);
   --text-dark: #213547;
