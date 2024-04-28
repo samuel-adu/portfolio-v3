@@ -1,7 +1,7 @@
 .contact-section {
   text-align: center;
   padding-block: var(--spacing-l);
-  background-color: var(--clr-neutral-50);
+  background-color: var(--bg-secondary);
 }
 
 .contact-section .section-text {

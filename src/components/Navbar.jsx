@@ -10,29 +10,25 @@ function Navbar() {
           <Link to="/" className="">
             <img src={logo} alt="" width={35} height={35} />
           </Link>
-          <span className="ml-1 mr-auto lowercase font-semibold">
+          <Link to="/" className="ml-1 mr-auto lowercase font-semibold">
             SamuelAdu
-          </span>
+          </Link>
 
           <nav className="nav">
-            <NavLink
-              to="#projects"
-              rel="noopener noreferrer"
-              className="nav-link btn btn--secondary"
-            >
+            <a href="#projects" rel="noopener noreferrer" className="nav-link">
               Work
-            </NavLink>
+            </a>
             <NavLink
               to="/resume"
               rel="noopener noreferrer"
-              className="nav-link btn btn--secondary"
+              className="nav-link"
             >
               Resumé
             </NavLink>
             <NavLink
               to="mailto:samueladu.dev@gmail.com"
               rel="noopener noreferrer"
-              className="nav-link btn btn--secondary"
+              className="nav-link"
             >
               Contact
             </NavLink>

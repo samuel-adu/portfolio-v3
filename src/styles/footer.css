@@ -1,12 +1,17 @@
 footer {
   padding-block: var(--spacing-s);
-  background-color: var(--bg-dark);
-  color: var(--clr-neutral-50);
   margin-top: auto;
+}
+
+.footer-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: var(--spacing-base);
 }

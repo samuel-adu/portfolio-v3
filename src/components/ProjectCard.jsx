@@ -24,7 +24,7 @@ export default function Project({ project }) {
         to={project.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="card-btn"
+        className="btn btn--secondary card-btn"
       >
         View on GitHub
       </Link>

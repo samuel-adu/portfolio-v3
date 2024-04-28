@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Projects() {
   return (
-    <div className="project-section">
+    <div id="projects" className="project-section">
       <div className="container">
-        <div id="projects" className="section-banner">
+        <div className="section-banner">
           <h2 className="section-heading project-section-heading">Projects</h2>
           <Link
             to="mailto:samueladu.dev@gmail.com"

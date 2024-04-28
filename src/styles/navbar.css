@@ -7,16 +7,16 @@
 
 .nav {
   display: none;
-  gap: var(--spacing-s);
+  gap: var(--spacing-base);
 }
 
-/* .nav-link {
-  padding-inline: var(--spacing-s);
-} */
+.nav-link {
+  padding: 0.5rem 1.5rem;
+}
 
-/* .nav-link:hover {
-  background-color: var(--clr-neutral-100);
-} */
+.nav-link:hover {
+  background-color: var(--bg-secondary);
+}
 
 @media (min-width: 640px) {
   .nav {

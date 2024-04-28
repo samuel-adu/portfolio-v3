@@ -7,12 +7,12 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="footer-nav">
+        <div className="footer-navbar">
           <p className="uppercase">
             &copy; {new Date().getFullYear()} samuel adu
           </p>
 
-          <nav className="nav">
+          <nav className="footer-nav">
             <NavLink
               to="https://www.frontendmentor.io/profile/samuel-adu"
               target="_blank"

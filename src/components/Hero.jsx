@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import displayPhoto from '../assets/images/display-photo.jpg';
 import '../styles/hero.css';
 
@@ -15,9 +15,9 @@ function Hero() {
             </h1>
 
             <div className="hero-cta">
-              <NavLink to="#projects" className="btn btn--primary">
+              <a href="#projects" className="btn btn--primary">
                 go to projects
-              </NavLink>
+              </a>
               <Link to="/resume" className="btn btn--secondary">
                 View my resumé
               </Link>
