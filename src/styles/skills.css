@@ -14,13 +14,14 @@
 }
 
 .skill-name {
-  font-size: var(--text-large);
+  font-size: var(--text-l);
   font-weight: 700;
   margin-bottom: 0;
 }
 .skill-level {
-  font-size: var(--text-thin);
+  font-size: var(--text-xs);
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 @media (min-width: 640px) {

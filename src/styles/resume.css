@@ -3,16 +3,16 @@
 }
 
 .summary {
-  font-size: var(--text-regular);
+  font-size: var(--text-base);
 }
 
 .email {
-  font-size: var(--text-regular);
+  font-size: var(--text-base);
   margin-bottom: var(--spacing-s);
 }
 
 .resume-heading {
-  font-size: var(--text-small);
+  font-size: var(--text-s);
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: var(--spacing-xs);
@@ -28,7 +28,7 @@
 }
 
 .date {
-  font-size: var(--text-thin);
+  font-size: var(--text-xs);
 }
 
 .resume-text {

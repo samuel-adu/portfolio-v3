@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="footer-navbar">
-          <p className="uppercase">
+          <p className="footer-text">
             &copy; {new Date().getFullYear()} samuel adu
           </p>
 

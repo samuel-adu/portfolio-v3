@@ -1,4 +1,5 @@
 import '../styles/resume.css';
+import Hr from '../components/Hr';
 
 function MyResume() {
   return (
@@ -15,6 +16,7 @@ function MyResume() {
 
       <div className="resume-section">
         <h3 className="resume-heading">skills</h3>
+        <Hr />
         <div className="row">
           <div className="col">
             <p className="resume-sub-heading skill-heading">
