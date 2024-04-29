@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -12,8 +10,12 @@
   --spacing-l: 9rem;
   --spacing-m: 5rem;
   --spacing-s: 2rem;
-  --spacing-base: 1rem;
-  --spacing-xs: 0.25rem;
+  --spacing-xs: 1rem;
+  --spacing-base: 0.25rem;
+
+  --screen-s: ;
+  --screen-m: 640px;
+  --screen-l: 1024px;
 
   --heading-1: 2.5rem;
   --heading-2: 2.25rem;
@@ -109,7 +111,7 @@ p {
 }
 
 .section-text {
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--spacing-base-xs);
 }
 
 .btn {

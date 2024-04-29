@@ -4,7 +4,7 @@
 
 .project-container {
   display: grid;
-  gap: var(--spacing-base);
+  gap: var(--spacing-xs);
 }
 
 .section-banner {
@@ -18,7 +18,7 @@
   background-color: var(--bg-secondary);
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-base);
+  padding: var(--spacing-xs);
 }
 
 .card-img {
@@ -36,11 +36,11 @@
   text-transform: capitalize;
   font-size: var(--heading-4);
   font-weight: 500;
-  margin-block: var(--spacing-base);
+  margin-block: var(--spacing-xs);
 }
 
 .card-text {
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--spacing-xs);
 }
 
 .card-btn {

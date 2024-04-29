@@ -1,0 +1,80 @@
+.resume-main-heading {
+  font-size: var(--heading-1);
+}
+
+.summary {
+  font-size: var(--text-regular);
+}
+
+.email {
+  font-size: var(--text-regular);
+  margin-bottom: var(--spacing-s);
+}
+
+.resume-heading {
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.resume-sub-heading {
+  font-size: var(--heading-6);
+  font-weight: 500;
+}
+
+.lead {
+  font-size: var(--heading-6);
+}
+
+.date {
+  font-size: var(--text-thin);
+  text-transform: uppercase;
+}
+
+.resume-text {
+  margin-bottom: var(--spacing-base);
+}
+
+.resume-list {
+  padding-left: var(--spacing-s);
+  margin-bottom: var(--spacing-s);
+  list-style-type: disc;
+}
+
+.resume-section {
+  margin-bottom: var(--spacing-m);
+}
+
+.skill-heading {
+  margin-bottom: var(--spacing-xs);
+}
+
+.skill-list {
+  margin-bottom: var(--spacing-xs);
+}
+
+.skill-list-item {
+  margin-bottom: var(--spacing-base);
+}
+
+@media (min-width: 640px) {
+  .resume-list {
+    padding-left: var(--spacing-m);
+  }
+
+  .flex,
+  .row {
+    display: flex;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .col {
+    flex: 1;
+  }
+
+  .date {
+    font-size: var(--heading-6);
+    text-transform: capitalize;
+  }
+}

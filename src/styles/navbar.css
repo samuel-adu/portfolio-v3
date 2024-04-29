@@ -7,7 +7,7 @@
 
 .nav {
   display: none;
-  gap: var(--spacing-base);
+  gap: var(--spacing-xs);
 }
 
 .nav-link {
