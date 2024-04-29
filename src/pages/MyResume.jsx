@@ -123,7 +123,7 @@ function MyResume() {
         <div>
           <div className="row">
             <p className="resume-sub-heading col">Web Developer</p>
-            <p className="lead col">Alumunite, Lagos</p>
+            <p className="lead col">Alpine Green Technology, Lagos</p>
             <p className="date col">Sep 2021 - Dec 2022</p>
           </div>
           <ul className="resume-list">
