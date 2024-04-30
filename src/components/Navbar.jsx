@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/icons/favicon-32x32.png';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 import '../styles/navbar.css';
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header>
       <div className="container">
-        <div className="navbar">
+        <nav className="nav">
           <Link to="/" className="">
             <img src={logo} alt="" width={35} height={35} />
           </Link>
@@ -14,7 +18,7 @@ function Navbar() {
             SamuelAdu
           </Link>
 
-          <nav className="nav">
+          <ul className={`${open ? 'nav-list-open' : 'nav-list'}`}>
             <a href="#projects" rel="noopener noreferrer" className="nav-link">
               Work
             </a>
@@ -32,8 +36,15 @@ function Navbar() {
             >
               Contact
             </NavLink>
-          </nav>
-        </div>
+          </ul>
+
+          <button
+            className="sm:hidden nav-btn"
+            onClick={() => setOpen((prevOpen) => !prevOpen)}
+          >
+            {open ? <FaXmark /> : <FaBars />}
+          </button>
+        </nav>
       </div>
     </header>
   );

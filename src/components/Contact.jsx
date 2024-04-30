@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <p className="section-text">
+        <p className="contact-section-text">
           I'm open to new opportunities and I'd like to work with you.
         </p>
 

@@ -6,9 +6,14 @@
   font-size: var(--text-base);
 }
 
-.email {
+.resume-link {
+  display: inline-block;
   font-size: var(--text-base);
   margin-bottom: var(--spacing-s);
+}
+
+.resume-link:hover {
+  color: var(--clr-primary);
 }
 
 .resume-heading {

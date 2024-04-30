@@ -9,7 +9,6 @@ function Home() {
     <main>
       <Hero />
       <Skills />
-      <hr />
       <Projects />
       <Contact />
     </main>

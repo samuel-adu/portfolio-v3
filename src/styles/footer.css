@@ -17,7 +17,6 @@ footer {
 }
 
 .footer-text {
-  color: var(--clr-primary-400);
   font-size: var(--text-xs);
   text-transform: uppercase;
 }

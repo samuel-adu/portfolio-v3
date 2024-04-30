@@ -1,5 +1,6 @@
 .project-section {
-  padding-block: var(--spacing-l);
+  padding-top: var(--spacing-m);
+  padding-bottom: var(--spacing-l);
 }
 
 .project-container {
@@ -28,7 +29,8 @@
 }
 
 .project-section-heading {
-  font-size: var(--heading-1);
+  font-size: var(--heading-3);
+  text-transform: uppercase;
   font-weight: 500;
 }
 

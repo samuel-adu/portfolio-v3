@@ -4,13 +4,13 @@
   background-color: var(--bg-secondary);
 }
 
-.contact-section .section-text {
+.contact-section-text {
   font-size: var(--heading-1);
   margin-bottom: var(--spacing-s);
 }
 
 @media (min-width: 640px) {
-  .contact-section .section-text {
+  .contact-section-text {
     width: 60%;
     margin-inline: auto;
   }

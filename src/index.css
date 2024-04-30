@@ -55,6 +55,8 @@
   --clr-primary-A400: #1de9b6;
   --clr-primary-A700: #00bfa5;
 
+  --clr-primary: var(--clr-primary-400);
+
   --bg-primary: #242424;
   --bg-secondary: hsl(235, 21%, 11%);
 

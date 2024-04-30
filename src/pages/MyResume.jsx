@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
 import '../styles/resume.css';
-import Hr from '../components/Hr';
 
 function MyResume() {
   return (
     <div className="container resume-container">
       <div className="resume-section">
         <h2 className="resume-main-heading">Samuel Adu</h2>
-        <p className="email">samueladu.dev@gmail.com</p>
+        <Link to="mailto:samueladu.dev@gmail.com" className="resume-link">
+          samueladu.dev@gmail.com
+        </Link>
         <p className="resume-text summary">
           Detail-oriented frontend developer focused on building aesthetically
           pleasing and functionally robust user-centric applications based on
@@ -16,7 +18,6 @@ function MyResume() {
 
       <div className="resume-section">
         <h3 className="resume-heading">skills</h3>
-        <Hr />
         <div className="row">
           <div className="col">
             <p className="resume-sub-heading skill-heading">
@@ -26,7 +27,6 @@ function MyResume() {
               <li className="skill-list-item">HTML</li>
               <li className="skill-list-item">CSS</li>
               <li className="skill-list-item">JavaScript</li>
-              <li className="skill-list-item">TypeScript</li>
             </ul>
           </div>
           <div className="col">

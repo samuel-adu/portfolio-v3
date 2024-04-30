@@ -1,25 +1,43 @@
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-block: var(--spacing-s);
+  position: relative;
 }
 
-.nav {
+.nav-list {
   display: none;
-  gap: var(--spacing-xs);
+}
+
+.nav-list-open {
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 6rem;
+  transition: all 0.3s ease;
 }
 
 .nav-link {
-  padding: 0.5rem 1.5rem;
+  padding: var(--spacing-xs) var(--spacing-s);
+  text-align: center;
 }
 
 .nav-link:hover {
   background-color: var(--bg-secondary);
 }
 
+.nav-btn {
+  z-index: 10;
+}
+
 @media (min-width: 640px) {
-  .nav {
+  .nav-list {
+    background-color: var(--bg-primary);
     display: flex;
+    flex-direction: row;
+    position: static;
   }
 }
