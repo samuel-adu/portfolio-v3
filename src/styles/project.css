@@ -23,6 +23,10 @@
   padding: var(--spacing-xs);
 }
 
+.project-card:hover {
+  border: 1px solid var(--clr-primary);
+}
+
 .card-img {
   object-fit: cover;
   object-position: center;
@@ -30,26 +34,32 @@
 }
 
 .project-section-heading {
-  font-size: var(--heading-3);
+  font-size: var(--heading-2);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .card-heading {
+  font-size: var(--text-l);
   text-transform: capitalize;
-  font-size: var(--heading-4);
-  font-weight: 500;
+  font-weight: 600;
   margin-block: var(--spacing-xs);
 }
 
 .card-text {
   margin-bottom: var(--spacing-xs);
+  font-size: var(--text-s);
 }
 
 .card-btn {
   align-self: flex-start;
   display: inline-block;
   margin-top: auto;
+  font-size: var(--text-s);
+}
+
+.card-btn:hover {
+  color: var(--clr-primary);
 }
 
 @media (min-width: 640px) {

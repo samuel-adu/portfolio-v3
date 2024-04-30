@@ -57,8 +57,8 @@
 
   --clr-primary: var(--clr-primary-400);
 
-  --bg-primary: #242424;
-  --bg-secondary: hsl(235, 21%, 11%);
+  --bg-secondary: hsl(235, 24%, 19%);
+  --bg-primary: hsl(235, 21%, 11%);
 
   --text-light: rgba(255, 255, 255, 0.87);
   --text-dark: #213547;
@@ -69,7 +69,7 @@
 
   color-scheme: light dark;
   color: var(--text-light);
-  background-color: var(--bg-primary-dark);
+  background-color: var(--bg-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -79,8 +79,6 @@
 
 body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 .container {
@@ -121,12 +119,12 @@ p {
   display: inline-block;
   text-transform: capitalize;
   cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.125rem;
 }
 
 .btn--primary {
   background-color: var(--clr-primary-A700);
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.125rem;
   color: var(--text-dark);
 }
 
@@ -134,17 +132,21 @@ p {
   background-color: var(--clr-primary-700);
 }
 
+.btn--secondary {
+  color: var(--clr-primary);
+}
+
 .btn--secondary:hover {
-  color: var(--clr-primary-400);
+  background-color: var(--bg-secondary);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-primary: #eceff1;
-    --bg-secondary: #ffffff;
+    --bg-primary: hsl(0, 0%, 95%);
+    --bg-secondary: hsl(0, 0%, 100%);
 
-    color: var(--text-dark);
     background-color: var(--bg-primary);
+    color: var(--text-dark);
   }
 }
 

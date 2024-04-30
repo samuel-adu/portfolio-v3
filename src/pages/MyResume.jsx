@@ -10,9 +10,10 @@ function MyResume() {
           samueladu.dev@gmail.com
         </Link>
         <p className="resume-text summary">
-          Detail-oriented frontend developer focused on building aesthetically
-          pleasing and functionally robust user-centric applications based on
-          frontend best practices.
+          Experienced frontend developer specialising in ReactJS. I have a
+          strong foundation in HTML, CSS and JavaScript, and I’m skilled at
+          building aesthetically pleasing and functionally robust user-centric
+          web applications.
         </p>
       </div>
 
@@ -27,6 +28,7 @@ function MyResume() {
               <li className="skill-list-item">HTML</li>
               <li className="skill-list-item">CSS</li>
               <li className="skill-list-item">JavaScript</li>
+              <li className="skill-list-item">TypeScript</li>
             </ul>
           </div>
           <div className="col">
@@ -60,8 +62,8 @@ function MyResume() {
           <p className="resume-sub-heading col">
             Federal University of Technology Akure
           </p>
-          <p className="lead col">B.Tech Statistics</p>
-          <p className="date col">Oct 2010 - Sep 2016</p>
+          <p className="lead col">Bachelor of Technology in Statistics</p>
+          <p className="date col">2010 - 2016</p>
         </div>
       </div>
 

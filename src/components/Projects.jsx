@@ -10,7 +10,7 @@ function Projects() {
           <h2 className="project-section-heading">Projects</h2>
           <Link
             to="mailto:samueladu.dev@gmail.com"
-            className="btn btn--primary"
+            className="btn btn--secondary"
           >
             contact me
           </Link>
