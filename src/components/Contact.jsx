@@ -7,7 +7,7 @@ function Contact() {
     <section id="contact" className="contact-section">
       <div className="container">
         <p className="contact-section-text">
-          I'm open to new opportunities and I'd like to work with you.
+          I'm available for work and open to new exciting opportunities.
         </p>
 
         <Link to="mailto:samueladu.dev@gmail.com" className="btn btn--primary">

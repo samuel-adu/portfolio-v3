@@ -11,17 +11,21 @@
 }
 
 .nav-list-open {
+  background-color: var(--clr-primary);
   background-color: var(--bg-secondary);
+  padding: var(--spacing-xs);
+  padding-top: var(--spacing-m);
   display: flex;
   flex-direction: column;
   position: absolute;
+  top: 1rem;
   right: 0;
-  top: 6rem;
   transition: all 0.3s ease;
+  border-radius: 1rem;
 }
 
 .nav-link {
-  padding: var(--spacing-xs) var(--spacing-s);
+  padding: 0.5rem var(--spacing-xs);
   text-align: center;
 }
 
@@ -31,6 +35,8 @@
 
 .nav-btn {
   z-index: 10;
+  padding-right: 1rem;
+  font-size: var(--text-l);
 }
 
 @media (min-width: 640px) {

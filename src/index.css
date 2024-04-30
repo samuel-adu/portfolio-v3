@@ -26,7 +26,7 @@
   --text-l: 1.5rem;
   --text-m: 1.25rem;
   --text-base: 1rem;
-  --text-small: 0.875rem;
+  --text-s: 0.875rem;
   --text-xs: 0.75rem;
 
   --clr-neutral-50: #eceff1;
@@ -131,7 +131,7 @@ p {
 }
 
 .btn--primary:hover {
-  background-color: var(--clr-primary-200);
+  background-color: var(--clr-primary-700);
 }
 
 .btn--secondary:hover {

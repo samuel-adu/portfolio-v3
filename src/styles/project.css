@@ -5,7 +5,8 @@
 
 .project-container {
   display: grid;
-  gap: var(--spacing-xs);
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: var(--spacing-s);
 }
 
 .section-banner {
@@ -53,11 +54,8 @@
 
 @media (min-width: 640px) {
   .project-container {
-    display: grid;
     gap: var(--spacing-s);
-    grid-template-columns: repeat(3, 1fr);
   }
-
   .project-card {
     padding: var(--spacing-s);
   }
