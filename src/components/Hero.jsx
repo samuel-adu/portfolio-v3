@@ -15,9 +15,9 @@ function Hero() {
             </h1>
 
             <div className="hero-cta">
-              <a href="#projects" className="btn btn--primary">
+              <Link to="#work" className="btn btn--primary">
                 go to projects
-              </a>
+              </Link>
               <Link to="/resume" className="btn btn--secondary">
                 View my resumé
               </Link>

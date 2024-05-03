@@ -6,26 +6,39 @@ import '../styles/navbar.css';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const activeStyle = {
+    color: 'var(--clr-primary)',
+    fontWeight: '800',
+  };
 
   return (
     <header>
       <div className="container">
         <nav className="nav">
-          <Link to="/" className="">
+          <Link
+            to="/"
+            className="mr-auto lowercase font-semibold flex items-center gap-1"
+          >
             <img src={logo} alt="" width={35} height={35} />
-          </Link>
-          <Link to="/" className="ml-1 mr-auto lowercase font-semibold">
             SamuelAdu
           </Link>
 
           <ul className={`${open ? 'nav-list-open' : 'nav-list'}`}>
-            <a href="#projects" rel="noopener noreferrer" className="nav-link">
+            <NavLink
+              to="/#work"
+              rel="noopener noreferrer"
+              className="nav-link"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              onClick={() => setOpen(false)}
+            >
               Work
-            </a>
+            </NavLink>
             <NavLink
               to="/resume"
               rel="noopener noreferrer"
               className="nav-link"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              onClick={() => setOpen(false)}
             >
               Resumé
             </NavLink>
@@ -33,6 +46,8 @@ function Navbar() {
               to="mailto:samueladu.dev@gmail.com"
               rel="noopener noreferrer"
               className="nav-link"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              onClick={() => setOpen(false)}
             >
               Contact
             </NavLink>
