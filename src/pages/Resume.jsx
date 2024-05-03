@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/resume.css';
 
-function MyResume() {
+function Resume() {
   return (
     <div className="container resume-container">
       <div className="resume-section">
@@ -149,4 +149,4 @@ function MyResume() {
   );
 }
 
-export default MyResume;
+export default Resume;
