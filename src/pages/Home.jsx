@@ -6,12 +6,12 @@ import Skills from '../components/Skills';
 
 function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <Skills />
       <Projects />
       <Contact />
-    </main>
+    </>
   );
 }
 

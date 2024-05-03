@@ -1,10 +1,10 @@
 const item = [
   {
-    jobTitle: '',
-    company: '',
-    startDate: '',
-    endDate: '',
-    location: '',
+    jobTitle: 'frontend developer',
+    company: 'orda africa',
+    startDate: 'dec 2022',
+    endDate: 'nov 2023',
+    location: 'lagos',
     responsibilties: [
       'Translated design wireframes to actual code that produced visual elements of the application, while collaborating with backend developers for seamless integration.',
       'Developed and maintained frontend for web apps, emphasising performance and cross-browser compatibility.',

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Projects() {
   return (
-    <div id="projects" className="project-section">
+    <div id="work" className="project-section">
       <div className="container">
         <div className="section-banner">
           <h2 className="project-section-heading">Projects</h2>
