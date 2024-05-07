@@ -1,5 +1,6 @@
 .project-section {
   padding-bottom: var(--spacing-l);
+  scroll-margin-top: var(--spacing-m);
 }
 
 .project-container {
@@ -29,7 +30,7 @@
 .card-img {
   object-fit: cover;
   object-position: center;
-  height: 200px;
+  /* min-height: 220px; */
 }
 
 .project-section-heading {
@@ -45,18 +46,30 @@
 
 .card-text {
   margin-bottom: var(--spacing-xs);
+  line-height: 1.6;
   font-size: var(--text-s);
+}
+
+.card-cta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-btn {
   align-self: flex-start;
   display: inline-block;
   margin-top: auto;
-  font-size: var(--text-s);
+  font-size: var(--text-xs);
+  padding: 0.5rem 1.5rem;
+  background: var(--gradient);
+  border-radius: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .card-btn:hover {
-  color: var(--clr-primary);
+  color: var(--text-light);
 }
 
 @media (min-width: 640px) {

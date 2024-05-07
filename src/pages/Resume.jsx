@@ -18,7 +18,7 @@ function Resume() {
       </div>
 
       <div className="resume-section">
-        <h3 className="resume-heading">skills</h3>
+        <h3 className="resume-heading">tech stack</h3>
         <div className="row">
           <div className="col">
             <p className="resume-sub-heading skill-heading">

@@ -20,14 +20,24 @@ export default function Project({ project }) {
 
       <p className="card-text">{project.description}</p>
 
-      <Link
-        to={project.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="card-btn"
-      >
-        View on GitHub
-      </Link>
+      <div className="card-cta">
+        <Link
+          to={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-btn"
+        >
+          View Code
+        </Link>
+        <Link
+          to={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-btn"
+        >
+          Preview Site
+        </Link>
+      </div>
     </article>
   );
 }

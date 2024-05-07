@@ -2,34 +2,54 @@ export const data = {
   projects: [
     {
       id: '01',
-      title: 'todo web app',
+      title: 'Orda Africa',
       description:
-        'The classic todo app with a few twists! This app includes a dark/light theme toggle and filter buttons.',
-      img: 'todo-app-desktop.jpeg',
-      github: 'https://github.com/samuel-adu/Todo-App',
-      liveUrl: 'https://todo-app-lilac-three.vercel.app',
-      tools: ['React', 'context-api'],
+        'Orda Africa’s product website allows merchants and visitors to request product demos online. Using React, Typescript, and Sass, I developed different components implemented on the front end of this site.',
+      img: 'orda-africa.png',
+      github: '',
+      liveUrl: 'https://orda.africa/',
+      tools: ['React', 'Rest API'],
     },
     {
       id: '02',
-      title: 'space tourism website',
+      title: 'Rest Country',
       description:
-        'This is a multi-page mobile responsive website built with React and data from a JSON file.',
-      img: 'space-tourism-desktop.jpeg',
-      github: 'https://github.com/samuel-adu/space-tourism-website',
-      liveUrl: 'http://space-tourism-website-beta.vercel.app/',
-      tools: ['react-router', 'react'],
+        'I developed this single-page web application using React, it integrates with the REST Countries API to display country information. React Router facilitates page navigation, and Context API manages app state for toggling between light and dark modes.',
+      img: 'rest-countries.jpg',
+      github: 'https://github.com/samuel-adu/rest-countries-api',
+      liveUrl: 'http://rest-countries-api-black.vercel.app/',
+      tools: ['React', 'Rest API'],
     },
     {
       id: '03',
-      title: 'advice app',
+      title: 'todo web app',
       description:
-        'This app generates random quotes of advice from the Advice Slip API.',
-      img: 'advice-app-desktop.jpeg',
-      github: 'https://github.com/samuel-adu/advice-generator-app',
-      liveUrl: 'http://advice-generator-app-dun.vercel.app/',
-      tools: ['React', 'API'],
+        'I created a React Todo Web App enabling users to add, complete, and delete tasks while filtering by status. The app integrates the Context API for state management, accommodating seamless toggling between light and dark modes.',
+      img: 'todo-web-app.jpeg',
+      github: 'https://github.com/samuel-adu/Todo-App',
+      liveUrl: 'https://todo-app-lilac-three.vercel.app',
+      tools: ['React', 'Context-API'],
     },
+    {
+      id: '04',
+      title: 'space tourism website',
+      description:
+        'I created a single-page web app for a virtual space tourism company using React, ensuring responsiveness across all devices. React-Router was used for seamless page navigation, enhancing user experience.',
+      img: 'space-tourism-website.jpeg',
+      github: 'https://github.com/samuel-adu/space-tourism-website',
+      liveUrl: 'http://space-tourism-website-beta.vercel.app/',
+      tools: ['React-Router', 'React'],
+    },
+    // {
+    //   id: '05',
+    //   title: 'Advice Web App',
+    //   description:
+    //     'This React Web App generates new pieces of advice from the Advice Slip API by clicking the dice icon.',
+    //   img: 'advice-web-app.jpeg',
+    //   github: 'https://github.com/samuel-adu/advice-generator-app',
+    //   liveUrl: 'http://advice-generator-app-dun.vercel.app/',
+    //   tools: ['React', 'API'],
+    // },
   ],
   skills: [
     {
@@ -64,16 +84,6 @@ export const data = {
     },
     {
       id: '07',
-      name: 'Tailwind CSS',
-      icon: 'tailwind-css.svg',
-    },
-    {
-      id: '08',
-      name: 'Sass',
-      icon: 'sass.svg',
-    },
-    {
-      id: '09',
       name: 'Git',
       icon: 'git.svg',
     },
