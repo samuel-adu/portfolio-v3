@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import { getImageUrl } from '../utils/getImageUrl';
+import { getProjectImage } from '../utils/getImageUrl';
 import '../styles/project.css';
 
 export default function Project({ project }) {
@@ -8,7 +8,7 @@ export default function Project({ project }) {
     <article className="project-card">
       <Link to={project.liveUrl} target="_blank">
         <img
-          src={getImageUrl(project.img)}
+          src={getProjectImage(project.img)}
           alt="project preview"
           className="card-img"
         />

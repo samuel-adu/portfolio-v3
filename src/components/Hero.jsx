@@ -4,9 +4,9 @@ import '../styles/hero.css';
 
 function Hero() {
   return (
-    <section className="">
+    <section className="hero-section">
       <div className="container">
-        <div className="hero-section">
+        <div className="hero-container">
           <div className="hero-main">
             <h1 className="hero-heading">
               I build aesthetically pleasing and functionally robust

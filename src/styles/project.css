@@ -1,5 +1,4 @@
 .project-section {
-  padding-top: var(--spacing-m);
   padding-bottom: var(--spacing-l);
 }
 
@@ -34,9 +33,7 @@
 }
 
 .project-section-heading {
-  font-size: var(--heading-2);
-  text-transform: uppercase;
-  font-weight: 600;
+  text-align: left;
 }
 
 .card-heading {
