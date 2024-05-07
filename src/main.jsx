@@ -11,22 +11,14 @@ import Resume from './pages/Resume.jsx';
 import Layout from './components/Layout.jsx';
 import './index.css';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: 'resume',
-        element: <Resume />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Layout />}>
+      <Route path="/" element={<Home />} />
+      <Route path="resume" element={<Resume />} />
+    </Route>
+  )
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
