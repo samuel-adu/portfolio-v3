@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
-import displayPhoto from '../assets/images/display-photo.jpg';
 import '../styles/hero.css';
 
 function Hero() {
   return (
-    <section className="">
+    <section className="hero-section">
       <div className="container">
-        <div className="hero-section">
+        <div className="hero-container">
           <div className="hero-main">
             <h1 className="hero-heading">
               I build aesthetically pleasing and functionally robust
@@ -25,9 +24,9 @@ function Hero() {
           </div>
 
           <img
-            src={displayPhoto}
+            src="https://res.cloudinary.com/dnke0ggdz/image/upload/v1715070083/profile-picture.jpg"
             alt="me sitting at my desk"
-            className="hero-img sm:order-1 hero-image"
+            className="sm:order-1 hero-image"
           />
         </div>
       </div>

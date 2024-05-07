@@ -1,29 +1,26 @@
 import '../styles/skills.css';
+import { getSkillIcon } from '../utils/getImageUrl';
+import { data } from '../data';
 
 function Skills() {
   return (
-    <div className="container">
-      <section className="skills-section">
-        <div className="skills-list">
-          <div className="skills-list-item">
-            <p className="skill-name">HTML</p>
-            <p className="skill-level">3 Years Experience</p>
-          </div>
-          <div className="skills-list-item">
-            <p className="skill-name">CSS</p>
-            <p className="skill-level">3 Years Experience</p>
-          </div>
-          <div className="skills-list-item">
-            <p className="skill-name">JavaScript</p>
-            <p className="skill-level">3 Years Experience</p>
-          </div>
-          <div className="skills-list-item">
-            <p className="skill-name">React</p>
-            <p className="skill-level">2 Years Experience</p>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section className="skills-section">
+      <div className="container">
+        <h2 className="section-heading skills-section-heading">Skills</h2>
+        <ul className="skills-list">
+          {data.skills.map((item) => (
+            <li key={item.id} className="skills-list-item">
+              <img
+                className="skill-icon"
+                src={getSkillIcon(item.icon)}
+                alt={item.name}
+              />
+              <span className="skill-name">{item.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 }
 
