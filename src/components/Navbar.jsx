@@ -24,15 +24,15 @@ function Navbar() {
           </Link>
 
           <ul className={`${open ? 'nav-list-open' : 'nav-list'}`}>
-            <NavLink
-              to="/#work"
+            <a
+              href="/#work"
               rel="noopener noreferrer"
               className="nav-link"
-              style={({ isActive }) => (isActive ? activeStyle : null)}
+              // style={({ isActive }) => (isActive ? activeStyle : null)}
               onClick={() => setOpen(false)}
             >
               Work
-            </NavLink>
+            </a>
             <NavLink
               to="/resume"
               rel="noopener noreferrer"

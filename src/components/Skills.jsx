@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section className="skills-section">
       <div className="container">
-        <h2 className="section-heading skills-section-heading">Skills</h2>
+        <h2 className="section-heading skills-section-heading">Tech Stack</h2>
         <ul className="skills-list">
           {data.skills.map((item) => (
             <li key={item.id} className="skills-list-item">

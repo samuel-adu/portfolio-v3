@@ -57,6 +57,8 @@
 
   --clr-primary: var(--clr-primary-400);
 
+  --gradient: linear-gradient(90deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
   --bg-secondary: hsl(235, 24%, 19%);
   --bg-primary: hsl(235, 21%, 11%);
 
@@ -77,9 +79,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 .container {
