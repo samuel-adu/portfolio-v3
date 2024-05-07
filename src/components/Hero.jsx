@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
-import displayPhoto from '../assets/images/display-photo.jpg';
 import '../styles/hero.css';
 
 function Hero() {
@@ -25,9 +24,9 @@ function Hero() {
           </div>
 
           <img
-            src={displayPhoto}
+            src="https://res.cloudinary.com/dnke0ggdz/image/upload/v1715070083/profile-picture.jpg"
             alt="me sitting at my desk"
-            className="hero-img sm:order-1 hero-image"
+            className="sm:order-1 hero-image"
           />
         </div>
       </div>
