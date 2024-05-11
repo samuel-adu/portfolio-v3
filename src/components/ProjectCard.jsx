@@ -25,7 +25,7 @@ export default function Project({ project }) {
           to={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="card-btn"
+          className="card-btn view-code-btn"
         >
           View Code
         </Link>
@@ -33,7 +33,7 @@ export default function Project({ project }) {
           to={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="card-btn"
+          className="card-btn preview-btn"
         >
           Preview Site
         </Link>
