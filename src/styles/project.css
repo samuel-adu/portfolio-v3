@@ -23,12 +23,6 @@
   padding: var(--spacing-xs);
 }
 
-.card-img {
-  object-fit: cover;
-  object-position: center;
-  /* min-height: 220px; */
-}
-
 .project-section-heading {
   text-align: left;
 }
@@ -64,7 +58,8 @@
 }
 
 .card-btn:hover {
-  color: var(--text-light);
+  color: var(--text-dark);
+  background: var(--gradient);
 }
 
 .view-code-btn {
@@ -75,19 +70,17 @@
   background-color: hsl(192, 100%, 67%);
 }
 
-.project-container:hover > :not(:hover) {
-  opacity: 0.4;
-}
-
-.project-card {
-  transition: opacity 0.6s ease;
-}
-
 @media (min-width: 640px) {
   .project-container {
     gap: var(--spacing-s);
   }
+
+  .project-container:hover > :not(:hover) {
+    opacity: 0.4;
+  }
+
   .project-card {
+    transition: opacity 0.6s ease;
     padding: var(--spacing-s);
   }
 }
