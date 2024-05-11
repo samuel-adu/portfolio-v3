@@ -30,16 +30,16 @@ export const data = {
       liveUrl: 'https://todo-app-lilac-three.vercel.app',
       tools: ['React', 'Context-API'],
     },
-    {
-      id: '04',
-      title: 'space tourism website',
-      description:
-        'I created a single-page web app for a virtual space tourism company using React, ensuring responsiveness across all devices. React-Router was used for seamless page navigation, enhancing user experience.',
-      img: 'space-tourism-website.jpeg',
-      github: 'https://github.com/samuel-adu/space-tourism-website',
-      liveUrl: 'http://space-tourism-website-beta.vercel.app/',
-      tools: ['React-Router', 'React'],
-    },
+    // {
+    //   id: '04',
+    //   title: 'space tourism website',
+    //   description:
+    //     'I created a single-page web app for a virtual space tourism company using React, ensuring responsiveness across all devices. React-Router was used for seamless page navigation, enhancing user experience.',
+    //   img: 'space-tourism-website.jpeg',
+    //   github: 'https://github.com/samuel-adu/space-tourism-website',
+    //   liveUrl: 'http://space-tourism-website-beta.vercel.app/',
+    //   tools: ['React-Router', 'React'],
+    // },
     // {
     //   id: '05',
     //   title: 'Advice Web App',
