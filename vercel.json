@@ -1,8 +1,8 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/[^.]+",
-      "dest": "/"
+      "source": "/(.*)",
+      "destination": "https://vercel.com/docs"
     }
   ]
 }
