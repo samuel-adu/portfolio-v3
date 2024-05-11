@@ -9,11 +9,17 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-  },
-  {
-    path: 'resume',
-    element: <Resume />,
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: 'resume',
+        element: <Resume />,
+      },
+    ],
   },
 ]);
 
