@@ -69,30 +69,12 @@ function Resume() {
 
       <div className="resume-section">
         <h3 className="resume-heading">EXPERIENCE</h3>
-        <div>
-          <div className="row">
-            <p className="resume-sub-heading col">Data Administrator</p>
-            <p className="lead col">E.ON UK, Solihull</p>
-            <p className="date col">Dec 2023 - Present</p>
-          </div>
-
-          <ul className="resume-list">
-            <li className="resume-list-item">
-              Created visualisations, dashboards, and reports to present
-              findings and communicate insights to stakeholders.
-            </li>
-            <li className="resume-list-item">
-              Ensured data quality by implementing data validation processes and
-              resolving inconsistencies.
-            </li>
-          </ul>
-        </div>
 
         <div>
           <div className="row">
             <p className="resume-sub-heading col">Frontend Developer</p>
-            <p className="lead col">Orda Africa, Lagos</p>
-            <p className="date col">Dec 2022 - Nov 2023</p>
+            <p className="lead col">Orda Africa, Remote</p>
+            <p className="date col">Dec 2022 - Present</p>
           </div>
           <ul className="resume-list">
             <li className="resume-list-item">
@@ -121,6 +103,10 @@ function Resume() {
               Wrote functional requirement documents and guides for seamless
               understanding of projects
             </li>
+            <li>
+              Engage in constructive code reviews and share knowledge with the
+              team.
+            </li>
           </ul>
         </div>
 
@@ -132,15 +118,37 @@ function Resume() {
           </div>
           <ul className="resume-list">
             <li className="resume-list-item">
-              Translated UI designs from Figma into innovative, responsive user
-              interfaces, while ensuring compatibility across devices
+              Develop and maintain front-end for web and mobile apps,
+              collaborating with back-end developers for seamless integration.
             </li>
             <li className="resume-list-item">
-              Built maintainable and reusable react components
+              Developed responsive and user-friendly web applications using
+              HTML, CSS, and JavaScript.
             </li>
             <li className="resume-list-item">
-              Migrated multipage website to a single-page application using
-              NextJS
+              Actively participate in development processes, including planning,
+              reviews, and continuous improvement cycles.
+            </li>
+            <li className="resume-list-item">
+              Conducted thorough testing and debugging using Chrome DevTools and
+              other browser developer tools.
+            </li>
+            <li className="resume-list-item">
+              Implemented version control using Git and GitHub for efficient
+              collaboration and code management.
+            </li>
+            <li className="resume-list-item">
+              Implemented responsive web design principles and followed a
+              mobile-first approach to ensure compatibility across various
+              devices.
+            </li>
+            <li className="resume-list-item">
+              Ensured accessibility compliance by adhering to WCAG standards and
+              implementing ARIA attributes.
+            </li>
+            <li className="resume-list-item">
+              Documented technical specifications, project requirements, and
+              codebase for future reference and team collaboration.
             </li>
           </ul>
         </div>
