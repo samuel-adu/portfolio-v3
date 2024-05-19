@@ -1,17 +1,16 @@
 .contact-section {
   text-align: center;
-  padding-block: var(--spacing-l);
+  padding-block: var(--spacing-m);
   background-color: var(--bg-secondary);
 }
 
 .contact-section-text {
-  font-size: var(--heading-1);
   margin-bottom: var(--spacing-s);
 }
 
 @media (min-width: 640px) {
   .contact-section-text {
-    width: 60%;
+    width: 50%;
     margin-inline: auto;
   }
 }

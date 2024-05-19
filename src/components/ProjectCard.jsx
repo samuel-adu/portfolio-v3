@@ -5,14 +5,14 @@ import '../styles/project.css';
 
 export default function Project({ project }) {
   return (
-    <>
-      <article className="project-card">
-        <img
-          src={getProjectImage(project.img)}
-          alt="project preview"
-          className="card-img"
-        />
+    <article className="project-card">
+      <img
+        src={getProjectImage(project.img)}
+        alt="project preview"
+        className="card-img"
+      />
 
+      <div className="card-content">
         <h3 className="card-heading">{project.title}</h3>
 
         <p className="card-text">{project.description}</p>
@@ -22,20 +22,20 @@ export default function Project({ project }) {
             to={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="card-btn view-code-btn"
+            className="btn btn--secondary"
           >
-            View Code
+            Source Code
           </Link>
           <Link
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="card-btn preview-btn"
+            className="btn btn--secondary"
           >
-            Preview Site
+            Visit Website
           </Link>
         </div>
-      </article>
-    </>
+      </div>
+    </article>
   );
 }

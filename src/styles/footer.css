@@ -1,15 +1,12 @@
-footer {
+.footer {
   padding-block: var(--spacing-xs);
   margin-top: auto;
-}
-
-.footer-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer-nav {
+.footer-links {
   display: flex;
   align-items: center;
   justify-content: center;
