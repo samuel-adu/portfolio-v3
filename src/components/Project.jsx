@@ -6,11 +6,11 @@ import '../styles/project.css';
 export default function Project({ project }) {
   return (
     <article className="project">
-      <div className="project-image">
+      <div className="project-preview">
         <img
           src={getProjectImage(project.img)}
           alt="project preview"
-          className="card-img"
+          className="project-image"
         />
       </div>
 
