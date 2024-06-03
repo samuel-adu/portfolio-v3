@@ -4,7 +4,7 @@ import '../styles/resume.css';
 function Resume() {
   return (
     <div className="container">
-      <section className="resume-section scroll-m-[var(--spacing-l)] mt-[var(--spacing-l)]">
+      <section className="resume-section scroll-m-[var(--space-l)] mt-[var(--space-l)]">
         <h2 className="resume-main-heading">Samuel Adu</h2>
         <Link to="mailto:samueladu.dev@gmail.com" className="resume-link">
           samueladu.dev@gmail.com

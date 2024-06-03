@@ -9,7 +9,7 @@
 .resume-link {
   display: inline-block;
   font-size: var(--text-base);
-  margin-bottom: var(--spacing-s);
+  margin-bottom: var(--space-s);
   color: var(--clr-primary);
 }
 
@@ -21,7 +21,7 @@
   font-size: var(--text-s);
   text-transform: uppercase;
   font-weight: 800;
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--space-xs);
 }
 
 .resume-sub-heading {
@@ -39,35 +39,35 @@
 }
 
 .resume-text {
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--space-base);
 }
 
 .resume-list {
-  padding-left: var(--spacing-s);
-  margin-bottom: var(--spacing-s);
+  padding-left: var(--space-s);
+  margin-bottom: var(--space-s);
   list-style-type: disc;
 }
 
 .resume-section {
-  margin-bottom: var(--spacing-m);
+  margin-bottom: var(--space-m);
 }
 
 .skill-heading {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--space-xs);
 }
 
 .skill-list {
-  margin-bottom: var(--spacing-s);
+  margin-bottom: var(--space-s);
 }
 
 .skill-list-item {
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--space-base);
 }
 
 @media (min-width: 640px) {
   .row {
     display: flex;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--space-xs);
   }
 
   .col {

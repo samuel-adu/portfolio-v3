@@ -5,17 +5,19 @@ import '../styles/project.css';
 
 export default function Project({ project }) {
   return (
-    <article className="project-card">
-      <img
-        src={getProjectImage(project.img)}
-        alt="project preview"
-        className="card-img"
-      />
+    <article className="project">
+      <div className="project-image">
+        <img
+          src={getProjectImage(project.img)}
+          alt="project preview"
+          className="card-img"
+        />
+      </div>
 
-      <div className="card-content">
-        <h3 className="card-heading">{project.title}</h3>
+      <div className="project-details">
+        <h3 className="project-name">{project.title}</h3>
 
-        <p className="card-text">{project.description}</p>
+        <p className="project-desc">{project.description}</p>
 
         <div className="card-cta">
           <Link
@@ -30,7 +32,7 @@ export default function Project({ project }) {
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--secondary"
+            className="btn btn--primary"
           >
             Visit Website
           </Link>

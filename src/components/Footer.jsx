@@ -5,40 +5,47 @@ import '../styles/footer.css';
 
 export default function Footer() {
   return (
-    <footer className="footer container">
-      <small className="footer-text">
-        &copy; {new Date().getFullYear()} samuel adu
-      </small>
+    <footer>
+      <div className="container">
+        <div className="footer">
+          <small className="footer-text">
+            &copy; {new Date().getFullYear()} samuel adu
+          </small>
 
-      <ul className="footer-links">
-        <li>
-          <Link
-            to="https://www.frontendmentor.io/profile/samuel-adu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiFrontendmentor className="text-2xl" />
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="https://github.com/samuel-adu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-2xl" />
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="https://www.linkedin.com/in/samuel-oa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-2xl" />
-          </Link>
-        </li>
-      </ul>
+          <ul className="footer-links">
+            <li>
+              <Link
+                to="https://www.frontendmentor.io/profile/samuel-adu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <SiFrontendmentor />
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://github.com/samuel-adu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <FaGithub />
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://www.linkedin.com/in/samuel-oa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <FaLinkedin />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   );
 }

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <motion.section
-      className="mb-[var(--spacing-m)] scroll-m-[var(--spacing-l)]"
+      className="mb-[var(--space-l)] scroll-m-[var(--space-l)] about-section text-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -16,7 +16,7 @@ export default function About() {
         minima laudantium ea temporibus deserunt! Fugiat praesentium possimus
         expedita? Molestiae.
       </p>
-      <p>
+      <p className="section-text">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id similique
         illum ut molestias, culpa, eos, facere laboriosam iusto ab expedita
         optio quasi modi at tenetur animi amet possimus porro incidunt.

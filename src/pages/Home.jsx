@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Intro from '../components/Intro';
-import Projects from '../components/Projects';
+import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import Skills from '../components/Skills';
 import About from '../components/About';
@@ -9,11 +9,11 @@ import Experience from '../components/Experience';
 function Home() {
   return (
     <>
+      <Intro />
       <main className="container">
-        <Intro />
         <About />
         <Skills />
-        <Projects />
+        <Portfolio />
         <Experience />
       </main>
       <Contact />

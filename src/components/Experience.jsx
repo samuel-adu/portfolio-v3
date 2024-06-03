@@ -10,10 +10,10 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="experience-section scroll-m-[var(--spacing-l)] mb-[var(--spacing-m)]"
+      className="experience-section scroll-m-[var(--space-l)] mb-[var(--space-l)]"
     >
       <h2 className="section-heading">Experience</h2>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="var(--bg-secondary)">
         {experience.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -21,9 +21,17 @@ export default function Experience() {
               icon={item.icon}
               iconStyle={{
                 backgroundColor: 'var(--bg-secondary)',
+                color: 'var(--clr-text)',
+              }}
+              contentArrowStyle={{
+                borderRight: '7px solid  var(--bg-secondary)',
+              }}
+              contentStyle={{
+                backgroundColor: 'var(--bg-secondary)',
+                color: 'var(--clr-text)',
               }}
             >
-              <h1>{item.title}</h1>
+              <h2>{item.title}</h2>
               <p>{item.company}</p>
               <p>{item.description}</p>
             </VerticalTimelineElement>
