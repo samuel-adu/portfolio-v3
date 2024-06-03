@@ -23,13 +23,13 @@
   color: var(--gradient);
 }
 
-.hero-cta {
+/* .hero-cta {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
+} */
 
 .intro-image {
   margin-bottom: var(--space-base);

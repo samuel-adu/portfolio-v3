@@ -49,9 +49,9 @@
 }
 
 @media (min-width: 680px) {
-  .project-preview {
-    /* padding: var(--space-m); */
-  }
+  /* .project-preview {
+    padding: var(--space-m);
+  } */
 }
 
 @media (min-width: 1024px) {

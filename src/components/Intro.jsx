@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/intro.css';
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa6';
+import { SiFrontendmentor } from 'react-icons/si';
 import CV from '../assets/samuel-adu-cv.pdf';
 import displayPhoto from '../assets//display-photo.jpg';
 
@@ -29,10 +30,11 @@ function Intro() {
               appealing web applications.
             </p>
 
-            <div className="hero-cta">
+            <div className="flex flex-wrap gap-2 items-center justify-center">
               <a href="#contact" className="btn btn--primary">
                 Contact Me
               </a>
+
               <Link
                 to={CV}
                 target="_blank"
@@ -41,22 +43,30 @@ function Intro() {
               >
                 Download CV <FaDownload />
               </Link>
-              <div className="hidden">
-                <Link
-                  to="https://github.com/samuel-adu"
-                  target="_blank"
-                  className="social-link"
-                >
-                  <FaGithub />
-                </Link>
-                <Link
-                  to="https://www.linkedin.com/in/samuel-oa/"
-                  target="_blank"
-                  className="social-link"
-                >
-                  <FaLinkedin />
-                </Link>
-              </div>
+
+              <Link
+                to="https://github.com/samuel-adu"
+                target="_blank"
+                className="social-link hidden"
+              >
+                <SiFrontendmentor />
+              </Link>
+
+              <Link
+                to="https://www.linkedin.com/in/samuel-oa/"
+                target="_blank"
+                className="social-link hidden"
+              >
+                <FaLinkedin />
+              </Link>
+
+              <Link
+                to="https://github.com/samuel-adu"
+                target="_blank"
+                className="social-link hidden"
+              >
+                <FaGithub />
+              </Link>
             </div>
           </div>
         </div>
