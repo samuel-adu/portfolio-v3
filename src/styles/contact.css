@@ -4,13 +4,16 @@
   background-color: var(--bg-secondary);
 }
 
-.contact-section-text {
-  margin-bottom: var(--space-base);
+.contact-me {
+  font-size: var(--heading-1);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: var(--space-s);
 }
 
 @media (min-width: 680px) {
-  .contact-section-text {
-    width: 80%;
+  .contact-me {
+    width: 70%;
     margin-inline: auto;
   }
 }

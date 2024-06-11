@@ -30,7 +30,7 @@ function Intro() {
               appealing web applications.
             </p>
 
-            <div className="flex flex-wrap gap-2 items-center justify-center">
+            <div className="flex flex-wrap gap-2 items-center justify-center lg:justify-start">
               <a href="#contact" className="btn btn--primary">
                 Contact Me
               </a>
@@ -47,7 +47,7 @@ function Intro() {
               <Link
                 to="https://github.com/samuel-adu"
                 target="_blank"
-                className="social-link hidden"
+                className="btn btn--tetiary social-link"
               >
                 <SiFrontendmentor />
               </Link>
@@ -55,7 +55,7 @@ function Intro() {
               <Link
                 to="https://www.linkedin.com/in/samuel-oa/"
                 target="_blank"
-                className="social-link hidden"
+                className="btn--tetiary social-link"
               >
                 <FaLinkedin />
               </Link>
@@ -63,7 +63,7 @@ function Intro() {
               <Link
                 to="https://github.com/samuel-adu"
                 target="_blank"
-                className="social-link hidden"
+                className="btn--tetiary social-link"
               >
                 <FaGithub />
               </Link>

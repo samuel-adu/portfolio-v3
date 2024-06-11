@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaGraduationCap, FaReact, FaCode } from 'react-icons/fa6';
+import AudiophileImage from './assets/images/audiophile-homepage.jpeg';
+import sneakersProductPage from './assets/images/sneakers-product-page.jpg';
+import restCountryPage from './assets/images/rest-countries.jpg';
 
 export const experience = [
   {
@@ -32,41 +35,33 @@ export const experience = [
 ];
 
 export const projects = [
-  // {
-  //   title: 'Orda Africa',
-  //   description:
-  //     'Orda Africa’s product website allows merchants and visitors to request product demos online. Using React, Typescript, and Sass, I developed different components implemented on the front end of this site.',
-  //   img: 'orda-africa.png',
-  //   github: '',
-  //   liveUrl: 'https://orda.africa/',
-  //   tools: ['React', 'Rest API'],
-  // },
+  {
+    title: 'Audiophile E-commerce Website',
+    description:
+      'A multi-page e-commerce website built using React, Redux for state management, React-Router for page navigation, and React-Hook-Form for form validation.',
+    img: AudiophileImage,
+    github: 'https://github.com/samuel-adu/audiophile',
+    liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
+    tools: ['React', 'Rest API'],
+  },
+
   {
     title: 'Sneakers Product Page',
     description:
-      'Orda Africa’s product website allows merchants and visitors to request product demos online. Using React, Typescript, and Sass, I developed different components implemented on the front end of this site.',
-    img: 'sneakers-product-page.jpg',
-    github: '',
-    liveUrl: 'https://orda.africa/',
+      'An e-commerce product page with the complete checkout flow and a lightbox gallery built using React, TypeScript and used Context-API for state management.',
+    img: sneakersProductPage,
+    github: 'https://github.com/samuel-adu/sneakers-product-page',
+    liveUrl: 'https://sneakers-product-page-by-samuel-adu.vercel.app',
     tools: ['React', 'Rest API'],
   },
   {
-    title: 'Rest Country',
+    title: 'Rest Country Website',
     description:
-      'I developed this single-page web application using React, it integrates with the REST Countries API to display country information. React Router facilitates page navigation, and Context API manages app state for toggling between light and dark modes.',
-    img: 'rest-countries.jpg',
-    github: 'https://github.com/samuel-adu/rest-countries-api',
-    liveUrl: 'http://rest-countries-api-black.vercel.app/',
+      'A single-page web application that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode ',
+    img: restCountryPage,
+    github: 'https://github.com/samuel-adu/rest-country',
+    liveUrl: 'https://rest-country-by-samuel-adu.vercel.app/',
     tools: ['React', 'Rest API'],
-  },
-  {
-    title: 'todo web app',
-    description:
-      'I created a React Todo Web App enabling users to add, complete, and delete tasks while filtering by status. The app integrates the Context API for state management, accommodating seamless toggling between light and dark modes.',
-    img: 'todo-web-app.jpeg',
-    github: 'https://github.com/samuel-adu/Todo-App',
-    liveUrl: 'https://todo-app-lilac-three.vercel.app',
-    tools: ['React', 'Context-API'],
   },
 ];
 

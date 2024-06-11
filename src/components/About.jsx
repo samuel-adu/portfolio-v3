@@ -16,11 +16,6 @@ export default function About() {
         minima laudantium ea temporibus deserunt! Fugiat praesentium possimus
         expedita? Molestiae.
       </p>
-      <p className="section-text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id similique
-        illum ut molestias, culpa, eos, facere laboriosam iusto ab expedita
-        optio quasi modi at tenetur animi amet possimus porro incidunt.
-      </p>
     </motion.section>
   );
 }

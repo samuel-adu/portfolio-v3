@@ -1,18 +1,15 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import { getProjectImage } from '../utils/getImageUrl';
 import '../styles/project.css';
 
 export default function Project({ project }) {
   return (
     <article className="project">
-      <div className="project-preview">
-        <img
-          src={getProjectImage(project.img)}
-          alt="project preview"
-          className="project-image"
-        />
-      </div>
+      <img
+        src={project.img}
+        alt="project preview"
+        className="project-image project-preview"
+      />
 
       <div className="project-details">
         <h3 className="project-name">{project.title}</h3>
@@ -21,20 +18,20 @@ export default function Project({ project }) {
 
         <div className="card-cta">
           <Link
-            to={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn--secondary"
-          >
-            Source Code
-          </Link>
-          <Link
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--primary"
           >
-            Visit Website
+            view demo
+          </Link>
+          <Link
+            to={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--secondary"
+          >
+            source code
           </Link>
         </div>
       </div>

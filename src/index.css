@@ -82,11 +82,12 @@ html {
 
 body {
   margin: 0;
+  hyphens: manual;
 }
 
 .container {
   width: 90%;
-  max-width: 1110px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -113,10 +114,11 @@ p {
   display: inline-flex;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 15px 30px;
+  padding: 10px 20px;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  border-radius: 4px;
 }
 
 .btn--primary {

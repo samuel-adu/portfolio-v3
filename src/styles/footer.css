@@ -1,6 +1,6 @@
 footer {
   background-color: var(--bg-secondary);
-  border-top: 1px solid var(--clr-neutral-100);
+  border-top: 1px solid var(--bg-primary);
 }
 
 .footer {
