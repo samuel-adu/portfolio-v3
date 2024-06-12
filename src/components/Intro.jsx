@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/intro.css';
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa6';
-import { SiFrontendmentor } from 'react-icons/si';
 import CV from '../assets/samuel-adu-cv.pdf';
 import displayPhoto from '../assets//display-photo.jpg';
 
@@ -41,21 +40,13 @@ function Intro() {
                 download
                 className="btn btn--secondary"
               >
-                Download CV <FaDownload />
-              </Link>
-
-              <Link
-                to="https://github.com/samuel-adu"
-                target="_blank"
-                className="btn btn--tetiary social-link"
-              >
-                <SiFrontendmentor />
+                Download CV <FaDownload className="inline mb-1" />
               </Link>
 
               <Link
                 to="https://www.linkedin.com/in/samuel-oa/"
                 target="_blank"
-                className="btn--tetiary social-link"
+                className="btn btn--tetiary"
               >
                 <FaLinkedin />
               </Link>
@@ -63,7 +54,7 @@ function Intro() {
               <Link
                 to="https://github.com/samuel-adu"
                 target="_blank"
-                className="btn--tetiary social-link"
+                className="btn btn--tetiary"
               >
                 <FaGithub />
               </Link>

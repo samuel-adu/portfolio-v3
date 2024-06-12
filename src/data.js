@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaGraduationCap, FaReact, FaCode } from 'react-icons/fa6';
-import AudiophileImage from './assets/images/audiophile-homepage.jpeg';
-import sneakersProductPage from './assets/images/sneakers-product-page.jpg';
-import restCountryPage from './assets/images/rest-countries.jpg';
+import AudiophileImage from './assets/images/audiophile.jpeg';
+import sneakersProductPage from './assets/images/sneakers-product-page.jpeg';
+import restCountry from './assets/images/rest-country-website.jpeg';
 
 export const experience = [
   {
@@ -57,8 +57,8 @@ export const projects = [
   {
     title: 'Rest Country Website',
     description:
-      'A single-page web application that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode ',
-    img: restCountryPage,
+      'A single-page website that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode ',
+    img: restCountry,
     github: 'https://github.com/samuel-adu/rest-country',
     liveUrl: 'https://rest-country-by-samuel-adu.vercel.app/',
     tools: ['React', 'Rest API'],
