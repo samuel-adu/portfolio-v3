@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.intro-main .btn--secondary {
+  background-color: var(--clr-neutral-400);
+}
+
 .outline-text {
   color: var(--clr-primary-500);
   text-transform: uppercase;

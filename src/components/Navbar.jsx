@@ -44,15 +44,6 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a
-                href="/#contact"
-                className="nav-link"
-                onClick={() => setOpen(false)}
-              >
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
               <NavLink
                 to="resume"
                 className="nav-link"
