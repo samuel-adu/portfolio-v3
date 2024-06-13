@@ -3,8 +3,8 @@ import '../styles/resume.css';
 
 function Resume() {
   return (
-    <div className="container resume-container">
-      <div className="resume-section">
+    <div className="container">
+      <section className="resume-section scroll-m-[var(--space-l)] mt-[var(--space-l)]">
         <h2 className="resume-main-heading">Samuel Adu</h2>
         <Link to="mailto:samueladu.dev@gmail.com" className="resume-link">
           samueladu.dev@gmail.com
@@ -15,9 +15,9 @@ function Resume() {
           building aesthetically pleasing and functionally robust user-centric
           web applications.
         </p>
-      </div>
+      </section>
 
-      <div className="resume-section">
+      <section className="resume-section">
         <h3 className="resume-heading">tech stack</h3>
         <div className="row">
           <div className="col">
@@ -54,9 +54,9 @@ function Resume() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="resume-section">
+      <section className="resume-section">
         <h3 className="resume-heading">EDUCATION</h3>
         <div className="row">
           <p className="resume-sub-heading col">
@@ -65,12 +65,12 @@ function Resume() {
           <p className="lead col">Bachelor of Technology in Statistics</p>
           <p className="date col">2010 - 2016</p>
         </div>
-      </div>
+      </section>
 
-      <div className="resume-section">
+      <section className="resume-section">
         <h3 className="resume-heading">EXPERIENCE</h3>
 
-        <div>
+        <article>
           <div className="row">
             <p className="resume-sub-heading col">Frontend Developer</p>
             <p className="lead col">Orda Africa, Remote</p>
@@ -108,9 +108,9 @@ function Resume() {
               team.
             </li>
           </ul>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <div className="row">
             <p className="resume-sub-heading col">Web Developer</p>
             <p className="lead col">Alpine Green Technology, Lagos</p>
@@ -151,8 +151,8 @@ function Resume() {
               codebase for future reference and team collaboration.
             </li>
           </ul>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
   );
 }

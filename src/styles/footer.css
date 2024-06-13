@@ -1,19 +1,29 @@
 footer {
-  padding-block: var(--spacing-xs);
-  margin-top: auto;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--bg-primary);
 }
 
-.footer-navbar {
+.footer {
+  padding-block: var(--space-base);
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer-nav {
+.footer-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-xs);
+  gap: 1rem;
+}
+
+.social-link {
+  font-size: 1.25rem;
+}
+
+.social-link:hover {
+  color: var(--clr-primary-500);
 }
 
 .footer-text {

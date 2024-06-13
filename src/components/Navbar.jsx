@@ -1,56 +1,58 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../assets/icons/favicon-32x32.png';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import '../styles/navbar.css';
 
-function Navbar() {
+function Header() {
   const [open, setOpen] = useState(false);
+
   const activeStyle = {
-    color: 'var(--clr-primary)',
-    fontWeight: '800',
+    color: 'var(--clr-primary-500)',
+    fontWeight: '700',
   };
 
   return (
-    <header>
+    <div className="navbar">
       <div className="container">
         <nav className="nav">
-          <Link
-            to="/"
-            className="mr-auto lowercase font-semibold flex items-center gap-1"
-          >
-            <img src={logo} alt="" width={35} height={35} />
-            SamuelAdu
-          </Link>
+          <div className="logo-div">
+            <Link
+              to="/"
+              className="mr-auto text-xl lowercase font-bold flex items-center gap-1"
+            >
+              SamuelAdu
+            </Link>
+          </div>
 
           <ul className={`${open ? 'nav-list-open' : 'nav-list'}`}>
-            <a
-              href="/#work"
-              rel="noopener noreferrer"
-              className="nav-link"
-              // style={({ isActive }) => (isActive ? activeStyle : null)}
-              onClick={() => setOpen(false)}
-            >
-              Work
-            </a>
-            <NavLink
-              to="/resume"
-              rel="noopener noreferrer"
-              className="nav-link"
-              style={({ isActive }) => (isActive ? activeStyle : null)}
-              onClick={() => setOpen(false)}
-            >
-              Resumé
-            </NavLink>
-            <NavLink
-              to="mailto:samueladu.dev@gmail.com"
-              rel="noopener noreferrer"
-              className="nav-link"
-              style={({ isActive }) => (isActive ? activeStyle : null)}
-              onClick={() => setOpen(false)}
-            >
-              Contact
-            </NavLink>
+            <li className="nav-item">
+              <a
+                href="/#projects"
+                className="nav-link"
+                onClick={() => setOpen(false)}
+              >
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="/#experience"
+                className="nav-link"
+                onClick={() => setOpen(false)}
+              >
+                Experience
+              </a>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="resume"
+                className="nav-link"
+                onClick={() => setOpen(false)}
+                style={({ isActive }) => (isActive ? activeStyle : null)}
+              >
+                Resumé
+              </NavLink>
+            </li>
           </ul>
 
           <button
@@ -61,8 +63,8 @@ function Navbar() {
           </button>
         </nav>
       </div>
-    </header>
+    </div>
   );
 }
 
-export default Navbar;
+export default Header;
