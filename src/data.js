@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaGraduationCap, FaReact, FaCode } from 'react-icons/fa6';
-import AudiophileImage from './assets/images/audiophile.jpeg';
-import sneakersProductPage from './assets/images/sneakers-product-page.jpeg';
-import restCountry from './assets/images/rest-country-website.jpeg';
+import audiophilePreview from './assets/images/audiophile-preview.jpeg';
+import sneakersPreview from './assets/images/sneakers-preview.jpeg';
+import restCountryPreview from './assets/images/rest-country-preview.jpeg';
 
 export const experience = [
   {
@@ -39,7 +39,7 @@ export const projects = [
     title: 'Audiophile E-commerce Website',
     description:
       'A multi-page e-commerce website built using React, Redux for state management, React-Router for page navigation, and React-Hook-Form for form validation.',
-    img: AudiophileImage,
+    img: audiophilePreview,
     github: 'https://github.com/samuel-adu/audiophile',
     liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
     tools: ['React', 'Rest API'],
@@ -49,7 +49,7 @@ export const projects = [
     title: 'Sneakers Product Page',
     description:
       'An e-commerce product page with the complete checkout flow and a lightbox gallery built using React, TypeScript and used Context-API for state management.',
-    img: sneakersProductPage,
+    img: sneakersPreview,
     github: 'https://github.com/samuel-adu/sneakers-product-page',
     liveUrl: 'https://sneakers-product-page-by-samuel-adu.vercel.app',
     tools: ['React', 'Rest API'],
@@ -58,7 +58,7 @@ export const projects = [
     title: 'Rest Country Website',
     description:
       'A single-page website that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode ',
-    img: restCountry,
+    img: restCountryPreview,
     github: 'https://github.com/samuel-adu/rest-country',
     liveUrl: 'https://rest-country-by-samuel-adu.vercel.app/',
     tools: ['React', 'Rest API'],

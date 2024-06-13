@@ -2,6 +2,15 @@
   margin-bottom: var(--space-l);
 }
 
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-rows: auto;
+  gap: var(--space-s);
+  justify-content: center;
+  /* align-items: center; */
+}
+
 .project {
   border-radius: 8px;
   display: flex;
@@ -31,7 +40,7 @@
 }
 
 .project-name {
-  font-size: var(--heading-3);
+  font-size: var(--heading-4);
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: var(--space-base);
@@ -51,12 +60,12 @@
   margin-top: auto;
 }
 
-@media (min-width: 640px) {
-  /* .portfolio > :not(:hover) {
-    opacity: 0.7;
-  } */
+/* @media (min-width: 640px) {
+  .portfolio > :not(:hover) {
+    opacity: 0.5;
+  }
 
-  /* .project {
+  .project {
     transition: opacity 0.6s ease;
-  } */
-}
+  }
+} */

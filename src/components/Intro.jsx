@@ -43,21 +43,23 @@ function Intro() {
                 Download CV <FaDownload className="inline mb-1" />
               </Link>
 
-              <Link
-                to="https://www.linkedin.com/in/samuel-oa/"
-                target="_blank"
-                className="btn btn--tetiary"
-              >
-                <FaLinkedin />
-              </Link>
+              <div className="flex gap-2">
+                <Link
+                  to="https://www.linkedin.com/in/samuel-oa/"
+                  target="_blank"
+                  className="btn btn--tetiary"
+                >
+                  <FaLinkedin />
+                </Link>
 
-              <Link
-                to="https://github.com/samuel-adu"
-                target="_blank"
-                className="btn btn--tetiary"
-              >
-                <FaGithub />
-              </Link>
+                <Link
+                  to="https://github.com/samuel-adu"
+                  target="_blank"
+                  className="btn btn--tetiary"
+                >
+                  <FaGithub />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
