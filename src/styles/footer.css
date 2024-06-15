@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--bg-secondary);
-  border-top: 1px solid var(--bg-primary);
+  /* background-color: var(--surface4); */
+  border-top: 1px solid var(--surface2);
 }
 
 .footer {
@@ -22,8 +22,9 @@ footer {
   font-size: 1.25rem;
 }
 
-.social-link:hover {
-  color: var(--clr-primary-500);
+.social-link:hover,
+.social-link:focus {
+  color: var(--brand);
 }
 
 .footer-text {

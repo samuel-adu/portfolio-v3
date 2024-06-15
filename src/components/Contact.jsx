@@ -11,7 +11,7 @@ function Contact() {
         </p>
 
         <Link to="mailto:samueladu.dev@gmail.com" className="btn btn--primary">
-          contact me
+          Get in Touch
         </Link>
       </div>
     </section>
