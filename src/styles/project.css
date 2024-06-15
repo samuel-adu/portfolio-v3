@@ -12,6 +12,7 @@
 }
 
 .project {
+  background-color: var(--surface2);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -31,10 +32,7 @@
 }
 
 .project-details {
-  background-color: var(--bg-secondary);
   padding: var(--space-base);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -50,6 +48,7 @@
   font-size: var(--text-base);
   line-height: 1.6;
   opacity: 0.5;
+  color: var(--text1);
   margin-bottom: var(--space-base);
 }
 
@@ -58,6 +57,10 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: auto;
+}
+
+.card-cta .btn--secondary {
+  border-color: var(--surface1);
 }
 
 /* @media (min-width: 640px) {
