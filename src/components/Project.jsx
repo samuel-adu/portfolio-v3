@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../styles/project.css';
 
@@ -21,17 +22,17 @@ export default function Project({ project }) {
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--primary"
+            className="btn btn--primary card-btn"
           >
-            view demo
+            preview site <FaExternalLinkAlt />
           </Link>
           <Link
             to={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--secondary"
+            className="card-btn github-link"
           >
-            source code
+            view source code
           </Link>
         </div>
       </div>
