@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
 import '../styles/intro.css';
-import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { FaFileAlt } from 'react-icons/fa';
 import CV from '../assets/samuel-adu-cv.pdf';
 import displayPhoto from '../assets//display-photo.jpg';
 
@@ -30,7 +31,10 @@ function Intro() {
             </p>
 
             <div className="flex flex-wrap gap-2 items-center justify-center lg:justify-start">
-              <a href="#contact" className="btn btn--primary">
+              <a
+                href="mailto:samueladu.dev@gmail.com"
+                className="btn btn--primary"
+              >
                 Contact Me
               </a>
 
@@ -40,7 +44,7 @@ function Intro() {
                 download
                 className="btn btn--secondary"
               >
-                Download CV <FaDownload className="inline mb-1" />
+                Download CV <FaFileAlt />
               </Link>
 
               <div className="flex gap-2">

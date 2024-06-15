@@ -134,7 +134,7 @@ p {
   font-size: var(--text-xs);
   font-weight: 700;
   color: var(--text1);
-  display: inline-block;
+  display: inline-flex;
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px 20px;
