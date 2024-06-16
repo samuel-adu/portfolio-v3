@@ -7,7 +7,7 @@ function Header() {
   const [open, setOpen] = useState(false);
 
   const activeStyle = {
-    color: 'var(--clr-primary-500)',
+    color: 'var(--text2)',
     fontWeight: '700',
   };
 
@@ -26,21 +26,22 @@ function Header() {
 
           <ul className={`${open ? 'nav-list-open' : 'nav-list'}`}>
             <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to="/"
+                style={({ isActive }) => (isActive ? activeStyle : null)}
+                onClick={() => setOpen(false)}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <a
                 href="/#projects"
                 className="nav-link"
                 onClick={() => setOpen(false)}
               >
                 Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="/#experience"
-                className="nav-link"
-                onClick={() => setOpen(false)}
-              >
-                Experience
               </a>
             </li>
             <li className="nav-item">

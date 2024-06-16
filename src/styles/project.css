@@ -68,10 +68,10 @@
   display: flex;
   align-items: center;
   gap: 0.5ch;
-  text-transform: capitalize;
+  text-transform: none;
   font-size: var(--text-s);
   font-weight: 600;
-  color: var(--text2);
+  color: var(--brand);
 }
 
 .github-link {
