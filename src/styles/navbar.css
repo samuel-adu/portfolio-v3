@@ -33,6 +33,16 @@
   transition: all 0.3s ease;
   border-radius: 0.5rem;
   z-index: 1;
+
+  width: 90%;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 4px 4px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  opacity: 0.9;
 }
 
 .nav-link {
@@ -41,7 +51,8 @@
 }
 
 .nav-link:hover {
-  color: var(--brand);
+  color: var(--text2);
+  font-weight: 700;
 }
 
 .nav-btn {

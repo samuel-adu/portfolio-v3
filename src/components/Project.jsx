@@ -32,7 +32,7 @@ export default function Project({ project }) {
             rel="noopener noreferrer"
             className="card-btn github-link"
           >
-            view source code
+            Source on Github
           </Link>
         </div>
       </div>

@@ -44,7 +44,7 @@ function Intro() {
                 download
                 className="btn btn--secondary"
               >
-                Download CV <FaFileAlt />
+                <FaFileAlt /> Download CV
               </Link>
 
               <div className="flex gap-2">
