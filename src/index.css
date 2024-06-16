@@ -11,13 +11,16 @@
 }
 
 :root {
-  /* color theme definition */
+  /* color definition */
   --brand: #009688;
   --brand: hsl(174, 100%, 29%);
+
+  /* brand foundation */
   --brand-hue: 174;
   --brand-saturation: 100%;
   --brand-lightness: 29%;
 
+  /* light */
   --brand-light: hsl(
     var(--brand-hue) var(--brand-saturation) var(--brand-lightness)
   );
@@ -30,6 +33,7 @@
   --surface-shadow-light: var(--brand-hue) 10% calc(var(--brand-lightness) / 5);
   --shadow-strength-light: 0.02;
 
+  /* dark */
   --brand-dark: hsl(
     var(--brand-hue) calc(var(--brand-saturation) / 2)
       calc(var(--brand-lightness) / 1.5)
@@ -44,6 +48,7 @@
   --shadow-strength-dark: 0.8;
 
   color-scheme: light;
+  /* set defaults */
   --brand: var(--brand-light);
   --text1: var(--text1-light);
   --text2: var(--text2-light);
@@ -53,8 +58,6 @@
   --surface4: var(--surface4-light);
   --surface-shadow: var(--surface-shadow-light);
   --shadow-strength: var(--shadow-strength-light);
-
-  /* end of color theme definition */
 
   --space-xl: 10rem;
   --space-l: 7.5rem;
@@ -73,7 +76,7 @@
   --text-xs: 0.8125rem;
 
   background-color: var(--surface1);
-  color: var(--text1);
+  color: var(--text2);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -95,6 +98,34 @@
     --surface-shadow: var(--surface-shadow-dark);
     --shadow-strength: var(--shadow-strength-dark);
   }
+}
+
+[color-scheme='light'] {
+  color-scheme: light;
+
+  --brand: var(--brand-light);
+  --text1: var(--text1-light);
+  --text2: var(--text2-light);
+  --surface1: var(--surface1-light);
+  --surface2: var(--surface2-light);
+  --surface3: var(--surface3-light);
+  --surface4: var(--surface4-light);
+  --surface-shadow: var(--surface-shadow-light);
+  --shadow-strength: var(--shadow-strength-light);
+}
+
+[color-scheme='dark'] {
+  color-scheme: dark;
+
+  --brand: var(--brand-dark);
+  --text1: var(--text1-dark);
+  --text2: var(--text2-dark);
+  --surface1: var(--surface1-dark);
+  --surface2: var(--surface2-dark);
+  --surface3: var(--surface3-dark);
+  --surface4: var(--surface4-dark);
+  --surface-shadow: var(--surface-shadow-dark);
+  --shadow-strength: var(--shadow-strength-dark);
 }
 
 html {
@@ -133,7 +164,6 @@ p {
 .btn {
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--text1);
   display: inline-flex;
   text-transform: uppercase;
   cursor: pointer;
@@ -146,17 +176,20 @@ p {
 
 .btn--primary {
   background-color: var(--brand);
+  color: var(--text1);
   border: 2px solid var(--brand);
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
   background-color: var(--surface2);
+  color: var(--text1);
 }
 
 .btn--secondary {
   background-color: var(--surface2);
   border: 2px solid var(--surface2);
+  color: var(--text2);
 }
 
 .btn--secondary:hover,
@@ -166,6 +199,7 @@ p {
 
 .btn--tetiary {
   background-color: var(--surface2);
+  color: var(--text2);
   border: 2px solid var(--surface2);
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -173,6 +207,7 @@ p {
 
 .btn--tetiary:hover {
   background-color: var(--surface4);
+  color: var(--text1);
 }
 
 .section-heading {
