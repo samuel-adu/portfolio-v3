@@ -6,11 +6,13 @@ import '../styles/project.css';
 export default function Project({ project }) {
   return (
     <article className="project">
-      <img
-        src={project.img}
-        alt="project preview"
-        className="project-image project-preview"
-      />
+      <div>
+        <img
+          src={project.img}
+          alt="project preview"
+          className="project-image project-preview"
+        />
+      </div>
 
       <div className="project-details">
         <h3 className="project-name">{project.title}</h3>
@@ -32,7 +34,7 @@ export default function Project({ project }) {
             rel="noopener noreferrer"
             className="card-btn github-link"
           >
-            Source on Github
+            View Code
           </Link>
         </div>
       </div>
