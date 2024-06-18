@@ -3,6 +3,9 @@ import { FaGraduationCap, FaReact, FaCode } from 'react-icons/fa6';
 import audiophilePreview from './assets/images/audiophile-preview.jpeg';
 import sneakersPreview from './assets/images/sneakers-preview.jpeg';
 import restCountryPreview from './assets/images/rest-country-preview.jpeg';
+import spaceTourismPreview from './assets/images/space-tourism.jpeg';
+import todoPreview from './assets/images/todo.jpeg';
+import micrositePreview from './assets/images/microsite.jpeg';
 
 export const experience = [
   {
@@ -36,13 +39,22 @@ export const experience = [
 
 export const projects = [
   {
-    title: 'Audiophile E-commerce Website',
+    title: 'Orda Africa Microsite',
+    description:
+      'Orda Africa platform provides merchant with a lightweight, mobile-optimized website that can be set up and customized in seconds for merchant to display their product.',
+    img: micrositePreview,
+    github: '',
+    liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
+    tools: [],
+  },
+  {
+    title: 'Audiophile Website',
     description:
       'A multi-page e-commerce website built using React, Redux for state management, React-Router for page navigation, and React-Hook-Form for form validation.',
     img: audiophilePreview,
     github: 'https://github.com/samuel-adu/audiophile',
     liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
-    tools: ['React', 'Rest API'],
+    tools: ['React', 'Redux', 'React-Router'],
   },
 
   {
@@ -52,16 +64,34 @@ export const projects = [
     img: sneakersPreview,
     github: 'https://github.com/samuel-adu/sneakers-product-page',
     liveUrl: 'https://sneakers-product-page-by-samuel-adu.vercel.app',
-    tools: ['React', 'Rest API'],
+    tools: ['React', 'TypeScript', 'Context API'],
   },
   {
     title: 'Rest Country Website',
     description:
-      'A single-page website that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode ',
+      'A website that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode.',
     img: restCountryPreview,
     github: 'https://github.com/samuel-adu/rest-country',
     liveUrl: 'https://rest-country-by-samuel-adu.vercel.app/',
-    tools: ['React', 'Rest API'],
+    tools: ['React', 'React Router', 'Context API'],
+  },
+  {
+    title: 'Todo Web App',
+    description:
+      'The classic todo app that allows user to add, delete and filter tasklist. Built using React and used Context API to manage theme state.',
+    img: todoPreview,
+    github: 'https://github.com/samuel-adu/todo-app',
+    liveUrl: 'http://todo-app-lilac-three.vercel.app',
+    tools: ['React', 'Context API'],
+  },
+  {
+    title: 'Space Tourism Website',
+    description:
+      'A multi-page space tourism website that provides information about a space exploration program. Built using React and used React Router for page routing.',
+    img: spaceTourismPreview,
+    github: 'https://github.com/samuel-adu/space-tourism-website',
+    liveUrl: 'http://space-tourism-website-beta.vercel.app',
+    tools: ['React', 'React-Router'],
   },
 ];
 
