@@ -43,8 +43,8 @@ export const projects = [
     description:
       'Orda Africa platform provides merchant with a lightweight, mobile-optimized website that can be set up and customized in seconds for merchant to display their product.',
     img: micrositePreview,
-    github: '',
-    liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
+    github: '#',
+    liveUrl: 'https://fortyfourbukaz.africa.restaurant',
     tools: [],
   },
   {
