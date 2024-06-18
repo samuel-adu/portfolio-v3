@@ -5,6 +5,7 @@ import sneakersPreview from './assets/images/sneakers-preview.jpeg';
 import restCountryPreview from './assets/images/rest-country-preview.jpeg';
 import spaceTourismPreview from './assets/images/space-tourism.jpeg';
 import todoPreview from './assets/images/todo.jpeg';
+import micrositePreview from './assets/images/microsite.jpeg';
 
 export const experience = [
   {
@@ -40,8 +41,8 @@ export const projects = [
   {
     title: 'Orda Africa Microsite',
     description:
-      'A multi-page e-commerce website built using React, Redux for state management, React-Router for page navigation, and React-Hook-Form for form validation.',
-    img: audiophilePreview,
+      'Orda Africa platform provides merchant with a lightweight, mobile-optimized website that can be set up and customized in seconds for merchant to display their product.',
+    img: micrositePreview,
     github: '',
     liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
     tools: [],
