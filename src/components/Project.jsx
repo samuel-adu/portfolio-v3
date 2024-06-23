@@ -28,14 +28,17 @@ export default function Project({ project }) {
           >
             preview site <FaExternalLinkAlt />
           </Link>
-          <Link
-            to={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-btn github-link"
-          >
-            View Code
-          </Link>
+
+          {project.github && (
+            <Link
+              to={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-btn github-link"
+            >
+              View code
+            </Link>
+          )}
         </div>
       </div>
     </article>
