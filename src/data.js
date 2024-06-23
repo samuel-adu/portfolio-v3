@@ -60,7 +60,7 @@ export const projects = [
   {
     title: 'Sneakers Product Page',
     description:
-      'An e-commerce product page with the complete checkout flow and a lightbox gallery built using React, TypeScript and used Context-API for state management.',
+      'An e-commerce product page with a lightbox gallery built using React, TypeScript and used Context-API for state management.',
     img: sneakersPreview,
     github: 'https://github.com/samuel-adu/sneakers-product-page',
     liveUrl: 'https://sneakers-product-page-by-samuel-adu.vercel.app',
