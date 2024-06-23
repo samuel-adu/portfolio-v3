@@ -41,7 +41,7 @@ export const projects = [
   {
     title: 'Orda Africa Microsite',
     description:
-      'Orda Africa platform provides merchant with a lightweight, mobile-optimized website that can be set up and customized in seconds for merchant to display their product.',
+      "Orda Africa's lightweight, mobile-optimized website that can be set up and customized in seconds for merchant to display their product.",
     img: micrositePreview,
     github: '',
     liveUrl: 'https://fortyfourbukaz.africa.restaurant',
@@ -50,7 +50,7 @@ export const projects = [
   {
     title: 'Audiophile Website',
     description:
-      'A multi-page e-commerce website built using React, Redux for state management, React-Router for page navigation, and React-Hook-Form for form validation.',
+      'A multi-page e-commerce website with complete checkout flow, built using React, Redux, React-Router, React-Hook-Form and TailwindCSS.',
     img: audiophilePreview,
     github: 'https://github.com/samuel-adu/audiophile',
     liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
@@ -60,7 +60,7 @@ export const projects = [
   {
     title: 'Sneakers Product Page',
     description:
-      'An e-commerce product page with the complete checkout flow and a lightbox gallery built using React, TypeScript and used Context-API for state management.',
+      'An e-commerce product page with a lightbox product gallery and cart functionality. Built using React, TypeScript and Context-API.',
     img: sneakersPreview,
     github: 'https://github.com/samuel-adu/sneakers-product-page',
     liveUrl: 'https://sneakers-product-page-by-samuel-adu.vercel.app',
@@ -69,7 +69,7 @@ export const projects = [
   {
     title: 'Rest Country Website',
     description:
-      'A website that displays country information from the REST Countries API. You can search for country, filter by region and also toggle between light and darkmode.',
+      'A website that displays country information from the REST Countries API. User can search for country, filter by region and also toggle between light and darkmode.',
     img: restCountryPreview,
     github: 'https://github.com/samuel-adu/rest-country',
     liveUrl: 'https://rest-country-by-samuel-adu.vercel.app/',
