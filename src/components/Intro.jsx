@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
 import '../styles/intro.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+// import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { FaFileAlt } from 'react-icons/fa';
 import CV from '../assets/samuel-adu-cv.pdf';
 import displayPhoto from '../assets//display-photo.jpg';
@@ -25,9 +25,9 @@ function Intro() {
             <p className="outline-text">frontend developer</p>
             <h1 className="hero-heading uppercase">samuel adu</h1>
             <p className="section-text">
-              Motivated and detail-oriented Front End Developer with 3 years of
-              experience in designing and implementing responsive and visually
-              appealing web applications.
+              Motivated and detail-oriented Front End Developer with 2 plus
+              years of experience in designing and implementing responsive and
+              visually appealing web applications.
             </p>
 
             <div className="flex flex-wrap gap-2 items-center justify-center lg:justify-start">
@@ -47,7 +47,7 @@ function Intro() {
                 <FaFileAlt /> Download CV
               </Link>
 
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <Link
                   to="https://www.linkedin.com/in/samuel-oa/"
                   target="_blank"
@@ -63,7 +63,7 @@ function Intro() {
                 >
                   <FaGithub />
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
