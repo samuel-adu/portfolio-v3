@@ -18,16 +18,7 @@ footer {
   gap: 1rem;
 }
 
-.social-link {
-  font-size: 1.25rem;
-}
-
-.social-link:hover,
-.social-link:focus {
-  color: var(--brand);
-}
-
 .footer-text {
   font-size: var(--text-xs);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
