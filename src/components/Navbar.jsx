@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaXmark } from 'react-icons/fa6';
+// import { useState } from 'react';
+import { Link } from 'react-router-dom';
+// import { FaBars, FaXmark } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiFrontendmentor } from 'react-icons/si';
 import '../styles/navbar.css';
 
 function Header() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
-  const activeStyle = {
-    color: 'var(--text2)',
-    fontWeight: '700',
-  };
+  // const activeStyle = {
+  //   color: 'var(--text2)',
+  //   fontWeight: '700',
+  // };
 
   return (
     <div className="navbar">
@@ -24,44 +26,38 @@ function Header() {
             </Link>
           </div>
 
-          <ul className={`${open ? 'nav-list-open' : 'nav-list'}`}>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to="/"
-                style={({ isActive }) => (isActive ? activeStyle : null)}
-                onClick={() => setOpen(false)}
+          <ul className="navbar__social-links">
+            <li>
+              <Link
+                to="https://www.frontendmentor.io/profile/samuel-adu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
               >
-                Home
-              </NavLink>
+                <SiFrontendmentor />
+              </Link>
             </li>
-            <li className="nav-item">
-              <a
-                href="/#projects"
-                className="nav-link"
-                onClick={() => setOpen(false)}
+            <li>
+              <Link
+                to="https://github.com/samuel-adu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
               >
-                Projects
-              </a>
+                <FaGithub />
+              </Link>
             </li>
-            <li className="nav-item">
-              <NavLink
-                to="resume"
-                className="nav-link"
-                onClick={() => setOpen(false)}
-                style={({ isActive }) => (isActive ? activeStyle : null)}
+            <li>
+              <Link
+                to="https://www.linkedin.com/in/samuel-oa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
               >
-                Resumé
-              </NavLink>
+                <FaLinkedin />
+              </Link>
             </li>
           </ul>
-
-          <button
-            className="sm:hidden nav-btn"
-            onClick={() => setOpen((prevOpen) => !prevOpen)}
-          >
-            {open ? <FaXmark /> : <FaBars />}
-          </button>
         </nav>
       </div>
     </div>
