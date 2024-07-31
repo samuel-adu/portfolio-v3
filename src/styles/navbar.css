@@ -55,6 +55,20 @@
   color: var(--clr-text);
 }
 
+.navbar__social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  font-size: 1.25rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--brand);
+}
+
 @media (min-width: 640px) {
   .nav-list {
     display: flex;
