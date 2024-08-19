@@ -42,6 +42,7 @@
   font-size: var(--heading-4);
   font-weight: 700;
   line-height: 1.1;
+  color: var(--text1);
   text-transform: capitalize;
   margin-bottom: var(--space-base);
 }
@@ -49,8 +50,8 @@
 .project-desc {
   font-size: var(--text-base);
   line-height: 1.6;
-  opacity: 0.5;
-  color: var(--text1);
+  color: var(--text2);
+  /* opacity: 0.5; */
   margin-bottom: var(--space-base);
 }
 
@@ -75,17 +76,18 @@
 }
 
 .github-link {
-  padding-inline: 0;
+  padding-inline: 20px;
   position: relative;
   color: var(--text1);
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .github-link::after {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 2px;
   background-color: var(--brand);
   opacity: 1;

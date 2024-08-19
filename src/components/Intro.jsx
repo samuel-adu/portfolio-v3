@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
-import '../styles/intro.css';
+import './Intro.css';
 // import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { FaFileAlt } from 'react-icons/fa';
 import CV from '../assets/samuel-adu-cv.pdf';
-import displayPhoto from '../assets//display-photo.jpg';
+import displayPhoto from '../assets/display-photo.jpg';
 
 function Intro() {
   return (

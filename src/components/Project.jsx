@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import '../styles/project.css';
+import './Project.css';
 
 export default function Project({ project }) {
   return (
@@ -36,7 +36,7 @@ export default function Project({ project }) {
               rel="noopener noreferrer"
               className="card-btn github-link"
             >
-              View code
+              View source code
             </Link>
           )}
         </div>
