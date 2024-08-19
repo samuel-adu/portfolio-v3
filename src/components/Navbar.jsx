@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // import { FaBars, FaXmark } from 'react-icons/fa6';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiFrontendmentor } from 'react-icons/si';
-import '../styles/navbar.css';
+import './Navbar.css';
 
 function Header() {
   // const [open, setOpen] = useState(false);

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
-import '../styles/contact.css';
+import './Contact.css';
 
 function Contact() {
   return (
@@ -11,7 +11,7 @@ function Contact() {
         </p>
 
         <Link to="mailto:samueladu.dev@gmail.com" className="btn btn--primary">
-          Get in Touch
+          get in touch with me
         </Link>
       </div>
     </section>

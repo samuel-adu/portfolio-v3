@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiFrontendmentor } from 'react-icons/si';
-import '../styles/footer.css';
+import './Footer.css';
 
 export default function Footer() {
   return (

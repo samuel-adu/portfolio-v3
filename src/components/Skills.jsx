@@ -1,4 +1,4 @@
-import '../styles/skills.css';
+import './Skills.css';
 import { getSkillIcon } from '../utils/getImageUrl';
 import { skills } from '../data';
 

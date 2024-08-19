@@ -25,7 +25,7 @@
     var(--brand-hue) var(--brand-saturation) var(--brand-lightness)
   );
   --text1-light: hsl(var(--brand-hue) var(--brand-saturation) 10%);
-  --text2-light: hsl(var(--brand-hue) 30% 30%);
+  --text2-light: hsla(var(--brand-hue) 70% 10%);
   --surface1-light: hsl(var(--brand-hue) 25% 90%);
   --surface2-light: hsl(var(--brand-hue) 20% 99%);
   --surface3-light: hsl(var(--brand-hue) 20% 92%);
@@ -76,7 +76,7 @@
   --text-xs: 0.8125rem;
 
   background-color: var(--surface1);
-  color: var(--text2);
+  color: var(--text1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -189,7 +189,7 @@ p {
 .btn--secondary {
   background-color: var(--surface2);
   border: 2px solid var(--surface2);
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .btn--secondary:hover,
@@ -212,6 +212,7 @@ p {
 
 .section-heading {
   font-size: var(--heading-2);
+  color: var(--text1);
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1.1;
@@ -220,7 +221,7 @@ p {
 }
 
 .section-text {
-  opacity: 0.5;
+  color: var(--text2);
   margin-bottom: var(--space-base);
 }
 
