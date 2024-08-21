@@ -15,8 +15,8 @@ function ThemeContextProvider({ children }) {
   const [theme, setTheme] = useState(getPreferredTheme);
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('color-scheme', theme);
   }, [theme]);
 
   function toggleTheme() {

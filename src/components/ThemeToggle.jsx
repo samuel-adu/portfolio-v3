@@ -7,11 +7,11 @@ export default function ThemeToggle() {
 
   return (
     <button onClick={toggleTheme} className="toggle-btn">
-      <span className="toggle-btn__text">
-        {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
-      </span>
       <span className="toggle-btn__icon">
         {theme === 'light' ? <HiSun /> : <HiMoon />}
+      </span>
+      <span className="toggle-btn__text">
+        {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
       </span>
     </button>
   );
