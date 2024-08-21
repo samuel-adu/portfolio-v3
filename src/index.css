@@ -11,6 +11,30 @@
 }
 
 :root {
+  --heading-1: 2.25rem;
+  --heading-2: 1.75rem;
+  --heading-3: 1.5rem;
+  --heading-4: 1.5rem;
+  --heading-5: 1.125rem;
+  --heading-6: 1.125rem;
+  --text-base: 0.9375rem;
+  --text-s: 0.875rem;
+  --text-xs: 0.8125rem;
+
+  --space-xl: 10rem;
+  --space-l: 7.5rem;
+  --space-m: 4rem;
+  --space-s: 2.5rem;
+  --space-base: 1.5rem;
+
+  --border-radius-round: 4px;
+  --border-radius-s: 4px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   /* color definition */
   --brand: #009688;
   --brand: hsl(174, 100%, 29%);
@@ -47,8 +71,8 @@
   --surface-shadow-dark: var(--brand-hue) 50% 3%;
   --shadow-strength-dark: 0.8;
 
-  color-scheme: light;
   /* set defaults */
+  color-scheme: light dark;
   --brand: var(--brand-light);
   --text1: var(--text1-light);
   --text2: var(--text2-light);
@@ -59,35 +83,13 @@
   --surface-shadow: var(--surface-shadow-light);
   --shadow-strength: var(--shadow-strength-light);
 
-  --space-xl: 10rem;
-  --space-l: 7.5rem;
-  --space-m: 4rem;
-  --space-s: 2.5rem;
-  --space-base: 1.5rem;
-
-  --heading-1: 2.25rem;
-  --heading-2: 1.75rem;
-  --heading-3: 1.5rem;
-  --heading-4: 1.5rem;
-  --heading-5: 1.125rem;
-  --heading-6: 1.125rem;
-  --text-base: 0.9375rem;
-  --text-s: 0.875rem;
-  --text-xs: 0.8125rem;
-
   background-color: var(--surface1);
   color: var(--text1);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-
     --brand: var(--brand-dark);
     --text1: var(--text1-dark);
     --text2: var(--text2-dark);
@@ -100,9 +102,8 @@
   }
 }
 
-[color-scheme='light'] {
+[data-theme='light'] {
   color-scheme: light;
-
   --brand: var(--brand-light);
   --text1: var(--text1-light);
   --text2: var(--text2-light);
@@ -114,9 +115,8 @@
   --shadow-strength: var(--shadow-strength-light);
 }
 
-[color-scheme='dark'] {
+[data-theme='dark'] {
   color-scheme: dark;
-
   --brand: var(--brand-dark);
   --text1: var(--text1-dark);
   --text2: var(--text2-dark);
@@ -171,7 +171,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius-s);
 }
 
 .btn--primary {

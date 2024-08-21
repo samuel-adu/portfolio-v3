@@ -1,23 +1,15 @@
-// import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { FaBars, FaXmark } from 'react-icons/fa6';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiFrontendmentor } from 'react-icons/si';
 import './Navbar.css';
+import ThemeToggle from './ThemeToggle';
 
 function Header() {
-  // const [open, setOpen] = useState(false);
-
-  // const activeStyle = {
-  //   color: 'var(--text2)',
-  //   fontWeight: '700',
-  // };
-
   return (
     <div className="navbar">
       <div className="container">
         <nav className="nav">
-          <div className="logo-div">
+          <div className="logo-div mr-auto">
             <Link
               to="/"
               className="mr-auto text-xl lowercase font-bold flex items-center gap-1"
@@ -58,6 +50,8 @@ function Header() {
               </Link>
             </li>
           </ul>
+
+          <ThemeToggle />
         </nav>
       </div>
     </div>
