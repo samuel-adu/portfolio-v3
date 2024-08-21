@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import Resume from './pages/Resume.jsx';
 import Layout from './components/Layout.jsx';
 import './index.css';
+import { ThemeContextProvider } from './context/ThemeContext.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeContextProvider>
+      <RouterProvider router={router} />
+    </ThemeContextProvider>
   </React.StrictMode>
 );

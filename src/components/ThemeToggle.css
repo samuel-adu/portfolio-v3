@@ -1,0 +1,27 @@
+.toggle-btn {
+  color: var(--text1);
+  padding: 0.5rem;
+  border: 1px solid var(--surface2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-btn__text {
+  display: none;
+}
+
+.toggle-btn__icon {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 680px) {
+  .toggle-btn {
+    border-radius: var(--border-radius-s);
+  }
+
+  .toggle-btn__text {
+    display: block;
+  }
+}

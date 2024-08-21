@@ -9,7 +9,7 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding-block: var(--space-base);
   border-bottom: 1px solid var(--surface2);
@@ -57,7 +57,8 @@
 
 .navbar__social-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .social-link {
