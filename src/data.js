@@ -109,16 +109,24 @@ export const skills = [
     icon: 'javascript.svg',
   },
   {
-    name: 'React.js',
-    icon: 'react.svg',
-  },
-  {
     name: 'TypeScript',
     icon: 'typescript.svg',
   },
   {
-    name: 'Next.js',
-    icon: 'next.js.svg',
+    name: 'React',
+    icon: 'react.svg',
+  },
+  {
+    name: 'Sass',
+    icon: 'sass.svg',
+  },
+  {
+    name: 'TailwindCSS',
+    icon: 'tailwind-css.svg',
+  },
+  {
+    name: 'Figma',
+    icon: 'figma.svg',
   },
   {
     name: 'Git',
