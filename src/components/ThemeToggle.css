@@ -8,6 +8,13 @@
   gap: 8px;
 }
 
+.toggle-btn:focus,
+.toggle-btn:hover {
+  border-color: var(--text1);
+  background-color: var(--text1);
+  color: var(--surface2);
+}
+
 .toggle-btn__text {
   display: none;
 }
