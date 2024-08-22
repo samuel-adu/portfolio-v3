@@ -18,33 +18,33 @@ function Header() {
             </Link>
           </div>
 
-          <ul className="navbar__social-links">
-            <li>
+          <ul className="nav__list">
+            <li className="nav__item">
               <Link
                 to="https://www.frontendmentor.io/profile/samuel-adu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="nav__link social-link fem"
               >
                 <SiFrontendmentor />
               </Link>
             </li>
-            <li>
+            <li className="nav__item">
               <Link
                 to="https://github.com/samuel-adu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="nav__link social-link github"
               >
                 <FaGithub />
               </Link>
             </li>
-            <li>
+            <li className="nav__item">
               <Link
                 to="https://www.linkedin.com/in/samuel-oa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="nav__link social-link linkedin"
               >
                 <FaLinkedin />
               </Link>

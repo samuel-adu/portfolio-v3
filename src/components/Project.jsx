@@ -24,7 +24,7 @@ export default function Project({ project }) {
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--primary card-btn"
+            className="btn btn--primary preview-btn"
           >
             preview site <FaExternalLinkAlt />
           </Link>
@@ -34,7 +34,7 @@ export default function Project({ project }) {
               to={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="card-btn github-link"
+              className="btn github-btn"
             >
               View source code
             </Link>

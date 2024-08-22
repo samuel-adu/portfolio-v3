@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from 'react-router-dom';
 import './Intro.css';
-// import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { FaFileAlt } from 'react-icons/fa';
 import CV from '../assets/samuel-adu-cv.pdf';
 import displayPhoto from '../assets/display-photo.jpg';
@@ -46,24 +45,6 @@ function Intro() {
               >
                 <FaFileAlt /> Download CV
               </Link>
-
-              {/* <div className="flex gap-2">
-                <Link
-                  to="https://www.linkedin.com/in/samuel-oa/"
-                  target="_blank"
-                  className="btn btn--tetiary"
-                >
-                  <FaLinkedin />
-                </Link>
-
-                <Link
-                  to="https://github.com/samuel-adu"
-                  target="_blank"
-                  className="btn btn--tetiary"
-                >
-                  <FaGithub />
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
