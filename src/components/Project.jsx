@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { HiExternalLink } from 'react-icons/hi';
-import { FaGithub } from 'react-icons/fa';
+
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
 import './Project.css';
@@ -8,7 +8,7 @@ import './Project.css';
 export default function Project({ project }) {
   return (
     <article className="project">
-      <div>
+      <div className="project-preview">
         <img
           src={project.img}
           alt="project preview"
@@ -19,15 +19,13 @@ export default function Project({ project }) {
       <div className="project-details">
         <h3 className="project-name">
           <Link
+            title="preview site"
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="live-url link-btn"
+            className="card__link"
           >
             {project.title}
-            <span>
-              <HiExternalLink />
-            </span>
           </Link>
         </h3>
 
@@ -41,37 +39,29 @@ export default function Project({ project }) {
 
         <p className="project-desc">{project.description}</p>
 
-        {project.github && (
+        <div className="card-cta">
           <Link
-            to={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-link link-btn"
-          >
-            source code <FaGithub />
-          </Link>
-        )}
-
-        {/* <div className="card-cta">
-          <Link
+            title="preview site"
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--primary preview-btn"
+            className="project-link card__link"
           >
-            preview site <FaExternalLinkAlt />
+            <FaExternalLinkAlt />
           </Link>
+
           {project.github && (
             <Link
+              title="view source code"
               to={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn github-btn"
+              className="project-link card__link"
             >
-              View source code
+              <FaGithub />
             </Link>
           )}
-        </div> */}
+        </div>
       </div>
     </article>
   );

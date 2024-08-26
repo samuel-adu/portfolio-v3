@@ -180,50 +180,73 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  border: 2px solid var(--brand-light);
   border-radius: var(--border-radius-s);
+  position: relative;
+  z-index: 1;
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  background: var(--surface1);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.btn:hover::after,
+.btn:focus::after {
+  right: 0;
+  background: var(--brand-light);
 }
 
 .btn--primary {
-  font-size: var(--text-xs);
-  font-weight: 700;
   background-color: var(--brand-light);
   color: var(--text-light);
   text-transform: uppercase;
-  border: 2px solid var(--brand-light);
+}
+
+.btn--primary::after {
+  display: none;
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
   background-color: var(--brand-dark);
-  border-color: var(--brand-dark);
+  background-color: transparent;
+  color: var(--text2);
 }
 
 .btn--secondary {
-  font-size: var(--text-xs);
-  font-weight: 700;
   color: var(--text1);
   text-transform: uppercase;
-  background-color: var(--surface1);
-  border: 2px solid var(--surface2);
 }
 
 .btn--secondary:hover,
 .btn--secondary:focus {
-  border-color: var(--surface2);
-  background-color: var(--surface2);
+  color: var(--text-light);
 }
 
 .btn--tetiary {
-  background-color: var(--surface2);
-  color: var(--text2);
-  border: 2px solid var(--surface2);
-  font-size: 1.5rem;
   padding: 0.5rem;
+  text-transform: capitalize;
+  font-size: var(--text-base);
+  font-weight: var(--fw-regular);
+  color: var(--text2);
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid var(--brand-light);
 }
 
 .btn--tetiary:hover {
-  background-color: var(--surface4);
-  color: var(--text1);
+  color: var(--text-light);
 }
 
 .section-heading {
