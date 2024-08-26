@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(337.5px, 1fr));
   grid-template-rows: auto;
-  gap: 1rem;
+  gap: var(--space-base);
   justify-content: center;
   /* align-items: center; */
 }
@@ -16,7 +16,7 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--space-s);
+  /* margin-bottom: var(--space-base); */
   flex: 1;
 }
 
@@ -35,7 +35,8 @@
   padding: var(--space-base);
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
+  align-items: flex-start;
 }
 
 .project-name {
@@ -57,43 +58,46 @@
 
 .card-cta {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
   margin-top: auto;
+  gap: 1rem;
 }
 
-.card-btn {
-  display: flex;
-  align-items: center;
-  text-transform: none;
-  color: var(--text1);
-  gap: 1ch;
+.project-link {
+  font-size: 1.25rem;
 }
 
 .github-btn {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--text1);
-  padding-inline: 20px;
-  position: relative;
+  display: block;
+  font-size: 1.75rem;
+  margin-left: var(--space-base);
+  transition: all 0.3s;
 }
 
-.github-btn::after {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  width: calc(100% - 40px);
-  height: 2px;
-  background-color: var(--text1);
-  opacity: 0;
+.github-btn:hover {
+  transform: scale(1.2);
 }
 
-.github-btn:hover::after,
-.github-btn:focus::after {
-  opacity: 1;
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-base);
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--surface1-light);
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  color: var(--brand);
+  font-size: var(--text-s);
+  font-weight: var(--fw-bold);
+}
+
+.card__link:hover,
+.card__link:focus {
+  color: var(--brand-light);
 }
 
 @media (min-width: 640px) {
@@ -104,13 +108,4 @@
   /* .project {
     transition: opacity 0.6s ease;
   } */
-
-  .project-details {
-    text-align: left;
-  }
-
-  .card-cta {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
 }
