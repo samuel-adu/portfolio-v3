@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
-import { FaExternalLinkAlt } from 'react-icons/fa';
+
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 import './Project.css';
 
 export default function Project({ project }) {
   return (
     <article className="project">
-      <div>
+      <div className="project-preview">
         <img
           src={project.img}
           alt="project preview"
@@ -15,28 +17,48 @@ export default function Project({ project }) {
       </div>
 
       <div className="project-details">
-        <h3 className="project-name">{project.title}</h3>
+        <h3 className="project-name">
+          <Link
+            title="preview site"
+            to={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card__link"
+          >
+            {project.title}
+          </Link>
+        </h3>
+
+        <div className="tools">
+          {project.tools.map((tool) => (
+            <span key={tool} className="tag">
+              {tool}
+            </span>
+          ))}
+        </div>
 
         <p className="project-desc">{project.description}</p>
 
         <div className="card-cta">
           <Link
+            title="preview site"
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--primary preview-btn"
+            className="project-link card__link"
           >
-            preview site <FaExternalLinkAlt />
+            <FaExternalLinkAlt />
           </Link>
 
           {project.github && (
             <Link
+              title="view source code"
               to={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn github-btn"
+              className="project-link card__link"
             >
-              View source code
+              <FaGithub />
             </Link>
           )}
         </div>
