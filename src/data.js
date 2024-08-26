@@ -45,22 +45,22 @@ export const projects = [
     img: micrositePreview,
     github: '',
     liveUrl: 'https://fortyfourbukaz.africa.restaurant',
-    tools: [],
+    tools: ['React', 'TypeScript', 'SCSS'],
   },
   {
-    title: 'Audiophile Website',
+    title: 'Audiophile E-Commerce',
     description:
-      'A multi-page e-commerce website with complete checkout flow, built using React, Redux, React-Router, React-Hook-Form and TailwindCSS.',
+      'E-commerce website with full cart and checkout functionality, form validation, and fully responsive, offering a seamless user experience across all devices.',
     img: audiophilePreview,
     github: 'https://github.com/samuel-adu/audiophile',
     liveUrl: 'https://audiophile-by-samuel-adu.vercel.app',
-    tools: ['React', 'Redux', 'React-Router'],
+    tools: ['React', 'Redux', 'React-Hook-Form'],
   },
 
   {
     title: 'Sneakers Product Page',
     description:
-      'An e-commerce product page with a lightbox product gallery and cart functionality. Built using React, TypeScript and Context-API.',
+      'A responsive e-commerce product page with a lightbox gallery, thumbnail image switching, and full cart functionality.',
     img: sneakersPreview,
     github: 'https://github.com/samuel-adu/sneakers-product-page',
     liveUrl: 'https://sneakers-product-page-by-samuel-adu.vercel.app',
@@ -69,7 +69,7 @@ export const projects = [
   {
     title: 'Rest Country Website',
     description:
-      'A website that displays country information from the REST Countries API. User can search for country, filter by region and also toggle between light and darkmode.',
+      'A dynamic website that integrates the Rest Country API, supports search and region-based filtering, border navigation, and light/dark mode toggle',
     img: restCountryPreview,
     github: 'https://github.com/samuel-adu/rest-country',
     liveUrl: 'https://rest-country-by-samuel-adu.vercel.app/',
@@ -78,7 +78,7 @@ export const projects = [
   {
     title: 'Todo Web App',
     description:
-      'The classic todo app that allows user to add, delete and filter tasklist. Built using React and used Context API to manage theme state.',
+      'A responsive todo app with features to add, complete, delete, and filter tasks, toggle light/dark mode, and interact with hover states.',
     img: todoPreview,
     github: 'https://github.com/samuel-adu/todo-app',
     liveUrl: 'http://todo-app-lilac-three.vercel.app',
@@ -87,7 +87,7 @@ export const projects = [
   {
     title: 'Space Tourism Website',
     description:
-      'A multi-page space tourism website that provides information about a space exploration program. Built using React and used React Router for page routing.',
+      'A responsive multi-page space tourism website with tabbed navigation for viewing detailed information, and interactive hover states for all elements.',
     img: spaceTourismPreview,
     github: 'https://github.com/samuel-adu/space-tourism-website',
     liveUrl: 'http://space-tourism-website-beta.vercel.app',

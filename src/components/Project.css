@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(337.5px, 1fr));
   grid-template-rows: auto;
-  gap: 1rem;
+  gap: var(--space-base);
   justify-content: center;
   /* align-items: center; */
 }
@@ -16,7 +16,7 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--space-s);
+  /* margin-bottom: var(--space-base); */
   flex: 1;
 }
 
@@ -35,7 +35,8 @@
   padding: var(--space-base);
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
+  align-items: flex-start;
 }
 
 .project-name {
@@ -73,27 +74,59 @@
   gap: 1ch;
 }
 
-.github-btn {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--text1);
-  padding-inline: 20px;
+.link-btn {
+  /* font-size: var(--text-base); */
+  /* font-weight: 600; */
+  /* color: var(--text1); */
+  /* padding-inline: 20px; */
   position: relative;
 }
 
-.github-btn::after {
+.link-btn::after {
   content: '';
   position: absolute;
-  bottom: 10px;
-  width: calc(100% - 40px);
+  bottom: -2px;
+  width: calc(100% - 25px);
   height: 2px;
-  background-color: var(--text1);
+  background-color: var(--text2);
   opacity: 0;
 }
 
-.github-btn:hover::after,
-.github-btn:focus::after {
+.link-btn:hover::after,
+.link-btn:focus::after {
   opacity: 1;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-base);
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--surface1-light);
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  color: var(--brand);
+  font-size: var(--text-s);
+  font-weight: var(--fw-bold);
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0;
+  /* background-color: aqua; */
+  margin-top: auto;
+}
+
+.live-url {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 0.25rem;
 }
 
 @media (min-width: 640px) {

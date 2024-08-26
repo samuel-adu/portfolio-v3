@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { HiExternalLink } from 'react-icons/hi';
+import { FaGithub } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 import './Project.css';
 
@@ -15,11 +17,42 @@ export default function Project({ project }) {
       </div>
 
       <div className="project-details">
-        <h3 className="project-name">{project.title}</h3>
+        <h3 className="project-name">
+          <Link
+            to={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="live-url link-btn"
+          >
+            {project.title}
+            <span>
+              <HiExternalLink />
+            </span>
+          </Link>
+        </h3>
+
+        <div className="tools">
+          {project.tools.map((tool) => (
+            <span key={tool} className="tag">
+              {tool}
+            </span>
+          ))}
+        </div>
 
         <p className="project-desc">{project.description}</p>
 
-        <div className="card-cta">
+        {project.github && (
+          <Link
+            to={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link link-btn"
+          >
+            source code <FaGithub />
+          </Link>
+        )}
+
+        {/* <div className="card-cta">
           <Link
             to={project.liveUrl}
             target="_blank"
@@ -28,7 +61,6 @@ export default function Project({ project }) {
           >
             preview site <FaExternalLinkAlt />
           </Link>
-
           {project.github && (
             <Link
               to={project.github}
@@ -39,7 +71,7 @@ export default function Project({ project }) {
               View source code
             </Link>
           )}
-        </div>
+        </div> */}
       </div>
     </article>
   );
