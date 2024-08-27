@@ -117,12 +117,12 @@ export const skills = [
     icon: 'react.svg',
   },
   {
-    name: 'Sass',
-    icon: 'sass.svg',
-  },
-  {
     name: 'TailwindCSS',
     icon: 'tailwind-css.svg',
+  },
+  {
+    name: 'Sass',
+    icon: 'sass.svg',
   },
   {
     name: 'Figma',

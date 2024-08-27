@@ -7,19 +7,22 @@
   margin-bottom: var(--space-m);
 }
 
-.skills-list {
+.skill__list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-s);
+  gap: var(--space-base);
   align-items: center;
   justify-content: center;
 }
 
-.skills-list-item {
+.skill__item {
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 90px;
+  height: 90px;
 }
 
 .skill-icon {
