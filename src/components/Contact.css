@@ -1,18 +1,18 @@
 .contact-section {
   text-align: center;
-  padding-block: var(--space-l);
-  background-color: var(--surface2);
+  padding-block: var(--spacing-1100);
 }
 
-.contact-me {
+.contact-section__heading {
+  color: var(--text-primary);
   font-size: 48px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--spacing-500);
 }
 
 @media (min-width: 680px) {
-  .contact-me {
+  .contact-section__heading {
     width: 70%;
     margin-inline: auto;
   }

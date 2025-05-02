@@ -6,11 +6,11 @@ function Contact() {
   return (
     <section id="contact" className="contact-section scroll-m-[var(--space-l)]">
       <div className="container">
-        <p className="contact-me">
+        <p className="contact-section__heading">
           I'm available for work and open to exciting opportunities.
         </p>
 
-        <Link to="mailto:samueladu.dev@gmail.com" className="btn">
+        <Link to="mailto:samueladu.dev@gmail.com" className="btn btn--primary">
           Get in Touch
         </Link>
       </div>

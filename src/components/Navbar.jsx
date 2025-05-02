@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiFrontendmentor } from 'react-icons/si';
 import './Navbar.css';
 import ThemeToggle from './ThemeToggle';
 
@@ -9,44 +7,29 @@ function Header() {
     <div className="navbar">
       <div className="container">
         <nav className="nav">
-          <div className="logo-div mr-auto">
-            <Link
-              to="/"
-              className="mr-auto text-xl lowercase font-bold flex items-center gap-1"
-            >
-              SamuelAdu
-            </Link>
-          </div>
+          <Link to="/" className="nav__logo">
+            Samuel Adu
+          </Link>
 
           <ul className="nav__list">
             <li className="nav__item">
               <Link
-                to="https://www.frontendmentor.io/profile/samuel-adu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav__link social-link fem"
-              >
-                <SiFrontendmentor />
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link
-                to="https://github.com/samuel-adu"
+                to="/projects"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav__link social-link github"
               >
-                <FaGithub />
+                projects
               </Link>
             </li>
             <li className="nav__item">
               <Link
-                to="https://www.linkedin.com/in/samuel-oa"
+                to="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav__link social-link linkedin"
               >
-                <FaLinkedin />
+                Contact Me
               </Link>
             </li>
           </ul>
