@@ -1,6 +1,8 @@
 .contact-section {
   text-align: center;
   padding-block: var(--spacing-1100);
+  border-top: 1px solid var(--border);
+  /* background-color: var(--bg-secondary); */
 }
 
 .contact-section__heading {

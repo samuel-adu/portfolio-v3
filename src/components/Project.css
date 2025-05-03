@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  border: 1px solid var(--border);
 }
 
 .project-preview,
@@ -35,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   gap: var(--spacing-200);
 }
 
@@ -84,7 +86,7 @@
 
 .tag {
   display: inline-block;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-alt);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   color: var(--text-primary);
