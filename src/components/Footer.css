@@ -1,10 +1,9 @@
 footer {
-  /* background-color: var(--surface4); */
-  border-top: 1px solid var(--surface2);
+  border-top: 1px solid var(--border);
 }
 
 .footer {
-  padding-block: var(--space-base);
+  padding-block: var(--spacing-300);
   margin-top: auto;
   display: flex;
   align-items: center;

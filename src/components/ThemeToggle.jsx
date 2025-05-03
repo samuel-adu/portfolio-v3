@@ -10,9 +10,9 @@ export default function ThemeToggle() {
       <span className="toggle-btn__icon">
         {theme === 'light' ? <HiSun /> : <HiMoon />}
       </span>
-      <span className="toggle-btn__text">
+      {/* <span className="toggle-btn__text">
         {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
-      </span>
+      </span> */}
     </button>
   );
 }

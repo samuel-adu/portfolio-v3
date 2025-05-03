@@ -16,7 +16,7 @@
 }
 
 .toggle-btn__text {
-  display: none;
+  display: block;
 }
 
 .toggle-btn__icon {
@@ -29,6 +29,6 @@
   }
 
   .toggle-btn__text {
-    display: block;
+    display: none;
   }
 }
