@@ -1,8 +1,8 @@
 .toggle-btn {
-  color: var(--text1);
+  color: var(--text-secondary);
   padding: 0.5rem;
-  border: 1px solid var(--surface2);
-  border-radius: 50%;
+  border: 1px solid var(--border);
+  border-radius: 999px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -10,13 +10,12 @@
 
 .toggle-btn:focus,
 .toggle-btn:hover {
-  border-color: var(--text1);
-  background-color: var(--text1);
-  color: var(--surface2);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
 }
 
 .toggle-btn__text {
-  display: block;
+  display: none;
 }
 
 .toggle-btn__icon {
@@ -24,11 +23,7 @@
 }
 
 @media (min-width: 680px) {
-  .toggle-btn {
-    border-radius: var(--border-radius-s);
-  }
-
   .toggle-btn__text {
-    display: none;
+    display: block;
   }
 }

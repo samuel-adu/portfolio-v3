@@ -30,6 +30,8 @@
   --clr-primary-800: hsla(0, 0%, 40%, 1);
   --clr-primary-900: hsla(0, 0%, 9%, 1);
 
+  --ff-primary: 'Geist', sans-serif;
+
   --heading-1: 2.25rem;
   --heading-2: 1.75rem;
   --heading-3: 1.5rem;
@@ -117,6 +119,7 @@ html {
 body {
   margin: 0;
   hyphens: manual;
+  font-family: var(--ff-primary);
 }
 
 a {
