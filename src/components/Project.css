@@ -64,6 +64,7 @@
 
 .project-link {
   font-size: 1.25rem;
+  color: var(--text-secondary);
 }
 
 .github-btn {
@@ -96,7 +97,7 @@
 
 .card__link:hover,
 .card__link:focus {
-  color: var(--brand-light);
+  color: var(--text-primary);
 }
 
 @media (min-width: 640px) {
