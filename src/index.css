@@ -111,6 +111,23 @@
   --clr-primary-900: hsla(0, 0%, 93%, 1);
 }
 
+[color-scheme='light'] {
+  color-scheme: light;
+  --background-1: hsla(0, 0%, 100%, 1);
+  --background-2: hsla(0, 0%, 98%, 1);
+
+  --clr-primary-50: hsla(0, 0%, 95%, 1);
+  --clr-primary-100: hsla(0, 0%, 92%, 1);
+  --clr-primary-200: hsla(0, 0%, 92%, 1);
+  --clr-primary-300: hsla(0, 0%, 92%, 1);
+  --clr-primary-400: hsla(0, 0%, 79%, 1);
+  --clr-primary-500: hsla(0, 0%, 66%, 1);
+  --clr-primary-600: hsla(0, 0%, 56%, 1);
+  --clr-primary-700: hsla(0, 0%, 49%, 1);
+  --clr-primary-800: hsla(0, 0%, 40%, 1);
+  --clr-primary-900: hsla(0, 0%, 9%, 1);
+}
+
 html {
   scroll-behavior: smooth;
   --line-color: var(--bg-secondary);
