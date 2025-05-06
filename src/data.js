@@ -97,24 +97,16 @@ export const projects = [
 
 export const skills = [
   {
-    name: 'HTML',
-    icon: 'html.svg',
-  },
-  {
-    name: 'CSS',
-    icon: 'css.svg',
-  },
-  {
-    name: 'JavaScript',
-    icon: 'javascript.svg',
+    name: 'React',
+    icon: 'react.svg',
   },
   {
     name: 'TypeScript',
     icon: 'typescript.svg',
   },
   {
-    name: 'React',
-    icon: 'react.svg',
+    name: 'JavaScript',
+    icon: 'javascript.svg',
   },
   {
     name: 'TailwindCSS',
@@ -125,11 +117,19 @@ export const skills = [
     icon: 'sass.svg',
   },
   {
-    name: 'Figma',
-    icon: 'figma.svg',
+    name: 'CSS',
+    icon: 'css.svg',
+  },
+  {
+    name: 'HTML',
+    icon: 'html.svg',
   },
   {
     name: 'Git',
     icon: 'git.svg',
   },
+  // {
+  //   name: 'Figma',
+  //   icon: 'figma.svg',
+  // },
 ];
