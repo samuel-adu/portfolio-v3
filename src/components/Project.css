@@ -48,6 +48,10 @@
   text-transform: capitalize;
 }
 
+.project-name:hover {
+  text-decoration: underline;
+}
+
 .project-desc {
   font-size: var(--text-base);
   line-height: 1.6;
@@ -58,25 +62,21 @@
 .card-cta {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   /* margin-top: auto; */
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
-.project-link {
+/* .card__link {
   font-size: 1.25rem;
   color: var(--text-secondary);
-}
+} */
 
-.github-btn {
-  display: block;
-  font-size: 1.75rem;
-  margin-left: var(--spacing-300);
-  transition: all 0.3s;
-}
-
-.github-btn:hover {
-  transform: scale(1.2);
-}
+/* .card__link:hover,
+.card__link:focus {
+  color: var(--text-primary);
+} */
 
 .tools {
   display: flex;
@@ -93,19 +93,4 @@
   color: var(--text-primary);
   font-size: var(--text-xs);
   font-weight: var(--fw-regular);
-}
-
-.card__link:hover,
-.card__link:focus {
-  color: var(--text-primary);
-}
-
-@media (min-width: 640px) {
-  /* .portfolio > :not(:hover) {
-    opacity: 0.5;
-  } */
-
-  /* .project {
-    transition: opacity 0.6s ease;
-  } */
 }

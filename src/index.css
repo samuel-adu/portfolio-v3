@@ -177,8 +177,13 @@ p {
   position: relative;
   z-index: 1;
   font-size: var(--text-s);
-  font-weight: 700;
-  border: 2px solid var(--clr-primary-900);
+  font-weight: var(--fw-semibold);
+  border: 1px solid var(--clr-primary-900);
+  text-transform: capitalize;
+}
+
+.btn--small {
+  padding: 5px 10px;
 }
 
 .btn--primary {
@@ -193,18 +198,19 @@ p {
 }
 
 .btn--secondary {
-  border-color: var(--clr-primary-700);
+  border-color: var(--border);
   color: var(--clr-primary-900);
 }
 
 .btn--secondary:hover {
-  border-color: var(--clr-primary-900);
+  border-color: var(--border-hover);
+  background-color: var(--clr-primary-50);
 }
 
 .section-heading {
   font-size: var(--heading-2);
   color: var(--text-primary);
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
   line-height: 1.1;
   margin-bottom: var(--spacing-500);
