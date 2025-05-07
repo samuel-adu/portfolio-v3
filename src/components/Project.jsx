@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { LuGithub, LuExternalLink } from 'react-icons/lu';
 
 import { Link } from 'react-router-dom';
 import './Project.css';
@@ -29,6 +29,8 @@ export default function Project({ project }) {
           </Link>
         </h3>
 
+        <p className="project-desc">{project.description}</p>
+
         <div className="tools">
           {project.tools.map((tool) => (
             <span key={tool} className="tag">
@@ -37,17 +39,16 @@ export default function Project({ project }) {
           ))}
         </div>
 
-        <p className="project-desc">{project.description}</p>
-
         <div className="card-cta">
           <Link
             title="preview site"
             to={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-link card__link"
+            className="card__link btn btn--small btn--secondary "
           >
-            <FaExternalLinkAlt />
+            <LuExternalLink />
+            preview
           </Link>
 
           {project.github && (
@@ -56,9 +57,10 @@ export default function Project({ project }) {
               to={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link card__link"
+              className="card__link btn btn--small btn--secondary "
             >
-              <FaGithub />
+              <LuGithub />
+              source code
             </Link>
           )}
         </div>

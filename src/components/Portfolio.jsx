@@ -8,7 +8,11 @@ function Portfolio() {
       id="projects"
       className="portfolio-section scroll-m-[var(--space-l)]"
     >
-      <h2 className="section-heading">Featured Projects</h2>
+      <h2 className="section-heading">My Projects</h2>
+      {/* <p>
+        Here are some of my recent projects. Each one was built with a focus on
+        user experience and performance.
+      </p> */}
 
       <div className="portfolio">
         {projects.map((project) => (
