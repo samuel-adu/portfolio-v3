@@ -30,13 +30,13 @@ function Contact() {
           </li>
           <li>
             <LuGithub />
-            <Link to="https://www.github.com/samuel-adu">
+            <Link to="https://github.com/samuel-adu">
               github.com/samuel-adu
             </Link>
           </li>
           <li>
             <LuLinkedin />
-            <Link to="https://www.linkedin.com/in/thesamueladu">
+            <Link to="https://www.linkedin.com/in/thesamueladu/">
               linkedin.com/in/thesamueladu
             </Link>
           </li>
