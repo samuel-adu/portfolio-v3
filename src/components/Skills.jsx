@@ -9,8 +9,7 @@ function Skills() {
       <div className="header">
         <h2 className="heading">My Stack</h2>
         <p>
-          I'm proficient in a wide range of technologies and constantly learning
-          new ones.
+          I'm proficient in these technologies and constantly learning new ones.
         </p>
       </div>
 

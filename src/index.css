@@ -141,7 +141,7 @@ body {
 }
 
 section {
-  padding-block: var(--spacing-500);
+  padding-block: var(--spacing-1100);
 }
 
 .container {
@@ -242,10 +242,6 @@ p {
 }
 
 @media (min-width: 680px) {
-  section {
-    padding-block: var(--spacing-1100);
-  }
-
   .container {
     max-width: 768px;
     padding-inline: var(--spacing-500);
