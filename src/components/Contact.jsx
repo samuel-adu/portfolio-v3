@@ -36,8 +36,8 @@ function Contact() {
           </li>
           <li>
             <LuLinkedin />
-            <Link to="https://www.linkedin.com/in/johndoe">
-              linkedin.com/in/thesamuel-adu
+            <Link to="https://www.linkedin.com/in/thesamueladu">
+              linkedin.com/in/thesamueladu
             </Link>
           </li>
         </ul>

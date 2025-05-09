@@ -8,13 +8,13 @@
 }
 
 .contact-section .subheading {
-  margin-bottom: var(--spacing-300);
+  margin-bottom: var(--spacing-200);
 }
 
 .contact__list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-200);
+  gap: var(--spacing-100);
 }
 
 .contact__list li {
