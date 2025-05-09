@@ -1,5 +1,10 @@
 .portfolio-section {
-  margin-bottom: var(--spacing-1100);
+  scroll-margin: var(--spacing-500);
+}
+
+.portfolio-section .header {
+  text-align: center;
+  margin-bottom: var(--spacing-500);
 }
 
 .portfolio {
@@ -11,84 +16,62 @@
   /* align-items: center; */
 }
 
-.project {
+.card {
   background-color: var(--bg-secondary);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  flex: 1;
   border: 1px solid var(--border);
 }
 
-.project-preview,
-.project-details {
-  flex: 1;
+.card__image-container {
+  width: 100%;
+  overflow: hidden;
 }
-
-.project-image {
+.card__image {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   object-fit: cover;
 }
 
-.project-details {
+.card__header {
   padding: var(--spacing-300);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--spacing-200);
 }
 
-.project-name {
-  font-size: var(--heading-4);
-  font-weight: 700;
+.card__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--fw-bold);
   line-height: 1.1;
   color: var(--text-primary);
   text-transform: capitalize;
+  margin-bottom: var(--spacing-100);
 }
 
-.project-name:hover {
-  text-decoration: underline;
+.card__description {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
 }
 
-.project-desc {
-  font-size: var(--text-base);
-  line-height: 1.6;
-  color: var(--text2);
-  /* opacity: 0.5; */
+.card__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-50);
+  padding-inline: var(--spacing-300);
+  margin-top: auto;
 }
 
-.card-cta {
+.card__footer {
+  padding: var(--spacing-300);
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* margin-top: auto; */
-  /* gap: 1rem; */
-}
-
-/* .card__link {
-  font-size: 1.25rem;
-  color: var(--text-secondary);
-} */
-
-/* .card__link:hover,
-.card__link:focus {
-  color: var(--text-primary);
-} */
-
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  /* margin-bottom: var(--spacing-300); */
 }
 
 .tag {
   display: inline-block;
   background-color: var(--bg-alt);
-  padding: 0.25rem 0.75rem;
+  padding: var(--spacing-50) var(--spacing-150);
   border-radius: 999px;
   color: var(--text-primary);
   font-size: var(--text-xs);

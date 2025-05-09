@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiFrontendmentor } from 'react-icons/si';
+import { LuGithub, LuLinkedin } from 'react-icons/lu';
+
 import './Footer.css';
 
 export default function Footer() {
@@ -12,25 +12,15 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} samuel adu
           </small>
 
-          <ul className="footer-links">
-            <li>
-              <Link
-                to="https://www.frontendmentor.io/profile/samuel-adu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <SiFrontendmentor />
-              </Link>
-            </li>
+          <ul className="footer__list">
             <li>
               <Link
                 to="https://github.com/samuel-adu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="footer__link"
               >
-                <FaGithub />
+                <LuGithub />
               </Link>
             </li>
             <li>
@@ -38,9 +28,9 @@ export default function Footer() {
                 to="https://www.linkedin.com/in/samuel-oa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="footer__link"
               >
-                <FaLinkedin />
+                <LuLinkedin />
               </Link>
             </li>
           </ul>
