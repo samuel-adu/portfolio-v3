@@ -1,21 +1,29 @@
 .contact-section {
-  text-align: center;
-  padding-block: var(--spacing-1100);
   border-top: 1px solid var(--border);
-  /* background-color: var(--bg-secondary); */
 }
 
-.contact-section__heading {
-  color: var(--text-primary);
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
+.contact-section .header {
+  text-align: center;
   margin-bottom: var(--spacing-500);
 }
 
-@media (min-width: 680px) {
-  .contact-section__heading {
-    width: 70%;
-    margin-inline: auto;
-  }
+.contact-section .subheading {
+  margin-bottom: var(--spacing-300);
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+.contact__list li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-100);
+  color: var(--text-primary);
+}
+
+.contact__list li a {
+  font-size: var(--text-base);
 }

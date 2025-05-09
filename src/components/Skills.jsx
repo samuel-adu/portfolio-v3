@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import './Skills.css';
 import { getSkillIcon } from '../utils/getImageUrl';
 import { skills } from '../data';
@@ -5,11 +6,13 @@ import { skills } from '../data';
 function Skills() {
   return (
     <section id="skills" className="skill skills-section">
-      <h2 className="section-heading skills-section-heading">My Stack</h2>
-      {/* <p>
-        I'm proficient in a wide range of technologies and constantly learning
-        new ones.
-      </p> */}
+      <div className="header">
+        <h2 className="heading">My Stack</h2>
+        <p>
+          I'm proficient in a wide range of technologies and constantly learning
+          new ones.
+        </p>
+      </div>
 
       <ul className="skill__list">
         {skills.map((item) => (

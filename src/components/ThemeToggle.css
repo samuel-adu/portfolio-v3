@@ -11,6 +11,7 @@
 .toggle-btn:focus,
 .toggle-btn:hover {
   border-color: var(--border-hover);
+  background-color: var(--clr-primary-50);
   color: var(--text-primary);
 }
 

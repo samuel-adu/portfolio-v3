@@ -10,11 +10,12 @@ footer {
   justify-content: space-between;
 }
 
-.footer-links {
+.footer__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  color: var(--text-primary);
 }
 
 .footer-text {
