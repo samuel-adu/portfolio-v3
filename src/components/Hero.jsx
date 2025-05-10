@@ -17,14 +17,11 @@ function Hero() {
           />
 
           <div className="hero__main">
-            <h1 className="main-heading">
-              Hi, I'm Samuel Adu
-              <br />
-              Frontend Developer
-            </h1>
+            <h1 className="main-heading">Hi, I'm Samuel Adu</h1>
 
             <p className="hero__text">
-              I build accessible, responsive, and performant web applications
+              Based in the UK, I'm a frontend developer passionate about
+              building accessible, responsive, and performant web applications
               with modern technologies.
             </p>
 
